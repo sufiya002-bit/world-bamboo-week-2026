@@ -852,6 +852,551 @@
         padding: 25px 18px;
     }
 
+}/* ============================================================
+   WORLD BAMBOO WEEK 2026
+   ONLINE COMPETITIONS - PREMIUM DESIGN
+   ============================================================ */
+
+.wbw-comp-section {
+    background: linear-gradient(180deg, #f5faf6 0%, #ffffff 100%);
+    padding: 90px 0;
+    position: relative;
+}
+
+.wbw-comp-section .container {
+    max-width: 1180px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* HERO */
+
+.wbw-comp-hero {
+    position: relative;
+    min-height: 350px;
+    border-radius: 28px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 45px;
+    background:
+        linear-gradient(rgba(4,65,34,.78), rgba(4,88,42,.84)),
+        url("images/world-bamboo-week-2026.png") center/cover no-repeat;
+    box-shadow: 0 18px 45px rgba(0,70,35,.18);
+}
+
+.wbw-comp-hero-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    padding: 45px 25px;
+    max-width: 900px;
+}
+
+.wbw-comp-logo {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    background: rgba(255,255,255,.95);
+    border-radius: 50%;
+    padding: 10px;
+    margin-bottom: 18px;
+}
+
+.wbw-comp-hero h2 {
+    color: #fff;
+    font-size: clamp(30px, 5vw, 50px);
+    margin: 0 0 12px;
+    line-height: 1.1;
+}
+
+.wbw-comp-hero-subtitle {
+    color: #eaffef;
+    font-size: 18px;
+    line-height: 1.7;
+    margin: 0 auto 20px;
+}
+
+.wbw-open-badge {
+    display: inline-block;
+    background: #fff;
+    color: #0b713b;
+    font-weight: 900;
+    padding: 9px 20px;
+    border-radius: 40px;
+    margin-bottom: 15px;
+    letter-spacing: .4px;
+}
+
+.wbw-deadline-badge {
+    display: inline-block;
+    background: #fff;
+    color: #b42318;
+    padding: 13px 22px;
+    border-radius: 8px;
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+/* EVENT INFO */
+
+.wbw-comp-info-grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 16px;
+    margin-bottom: 50px;
+}
+
+.wbw-comp-info {
+    background: #fff;
+    border: 1px solid #dcebe0;
+    border-radius: 16px;
+    padding: 22px 15px;
+    text-align: center;
+    box-shadow: 0 5px 20px rgba(0,0,0,.05);
+}
+
+.wbw-comp-info-icon {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.wbw-comp-info strong {
+    display: block;
+    color: #145c32;
+    font-size: 15px;
+}
+
+.wbw-comp-info span {
+    display: block;
+    color: #6a766e;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* REWARDS STRIP */
+
+.wbw-reward-strip {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 18px;
+    margin-bottom: 55px;
+}
+
+.wbw-reward {
+    padding: 24px;
+    border-radius: 17px;
+    background: #fff;
+    border: 1px solid #e1ece4;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(0,0,0,.05);
+}
+
+.wbw-reward-icon {
+    font-size: 35px;
+    margin-bottom: 8px;
+}
+
+.wbw-reward strong {
+    display: block;
+    color: #155d32;
+    margin-bottom: 6px;
+}
+
+.wbw-reward span {
+    color: #68756d;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+/* COMPETITION GRID */
+
+.wbw-comp-grid {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 28px;
+}
+
+/* CARD */
+
+.wbw-comp-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 1px solid #dce9df;
+    box-shadow: 0 8px 28px rgba(0,0,0,.06);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.wbw-comp-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 16px 38px rgba(0,0,0,.10);
+}
+
+.wbw-comp-image {
+    height: 210px;
+    overflow: hidden;
+    position: relative;
+}
+
+.wbw-comp-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform .35s ease;
+}
+
+.wbw-comp-card:hover .wbw-comp-image img {
+    transform: scale(1.05);
+}
+
+.wbw-comp-number {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: rgba(7,83,43,.94);
+    color: #fff;
+    padding: 7px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 900;
+    letter-spacing: .7px;
+}
+
+.wbw-comp-open {
+    position: absolute;
+    top: 14px;
+    right: 14px;
+    background: #fff;
+    color: #b42318;
+    padding: 7px 11px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 900;
+}
+
+/* CARD BODY */
+
+.wbw-comp-body {
+    padding: 26px;
+}
+
+.wbw-comp-title-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    margin-bottom: 12px;
+}
+
+.wbw-comp-icon {
+    font-size: 31px;
+    line-height: 1;
+}
+
+.wbw-comp-body h3 {
+    margin: 0;
+    color: #173b2a;
+    font-size: 22px;
+    line-height: 1.3;
+}
+
+.wbw-comp-description {
+    color: #66736b;
+    line-height: 1.65;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+/* QUICK TAGS */
+
+.wbw-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-bottom: 18px;
+}
+
+.wbw-tag {
+    background: #edf8f0;
+    color: #17653a;
+    border-radius: 20px;
+    padding: 6px 10px;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+/* DETAILS */
+
+.wbw-comp-details {
+    background: #f7faf7;
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 18px;
+}
+
+.wbw-detail {
+    display: grid;
+    grid-template-columns: 105px 1fr;
+    gap: 8px;
+    font-size: 13px;
+    margin: 7px 0;
+    color: #5f6b63;
+}
+
+.wbw-detail strong {
+    color: #155d32;
+}
+
+/* REWARD */
+
+.wbw-card-reward {
+    background: #fffaf0;
+    border: 1px solid #eedeb9;
+    color: #69582d;
+    border-radius: 10px;
+    padding: 13px;
+    font-size: 13px;
+    line-height: 1.55;
+    margin-bottom: 20px;
+}
+
+/* BUTTONS */
+
+.wbw-comp-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.wbw-guideline-btn,
+.wbw-submit-btn {
+    border: 0;
+    border-radius: 8px;
+    padding: 13px 12px;
+    font-weight: 800;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none !important;
+    font-size: 13px;
+}
+
+.wbw-guideline-btn {
+    background: #edf5ef;
+    color: #155d32 !important;
+}
+
+.wbw-submit-btn {
+    background: #168447;
+    color: #fff !important;
+}
+
+.wbw-guideline-btn:hover {
+    background: #dcece1;
+}
+
+.wbw-submit-btn:hover {
+    background: #0c6233;
+}
+
+/* GUIDELINES */
+
+.wbw-guidelines {
+    display: none;
+    margin-top: 20px;
+    border-top: 1px solid #dfe9e2;
+    padding-top: 22px;
+}
+
+.wbw-guidelines.active {
+    display: block;
+}
+
+.wbw-guidelines h4 {
+    color: #155d32;
+    font-size: 17px;
+    margin: 20px 0 8px;
+}
+
+.wbw-guidelines p,
+.wbw-guidelines li {
+    color: #5f6b63;
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+.wbw-guidelines ul {
+    padding-left: 20px;
+}
+
+.wbw-criteria {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 12px 0 20px;
+    font-size: 12px;
+}
+
+.wbw-criteria th,
+.wbw-criteria td {
+    border: 1px solid #dfe8e1;
+    padding: 9px;
+    text-align: left;
+}
+
+.wbw-criteria th {
+    background: #edf7ef;
+    color: #155d32;
+}
+
+.wbw-criteria td:last-child,
+.wbw-criteria th:last-child {
+    text-align: center;
+    font-weight: 700;
+}
+
+.wbw-rule-box {
+    background: #f7faf7;
+    border-left: 4px solid #168447;
+    padding: 13px 15px;
+    border-radius: 5px;
+    margin: 12px 0;
+}
+
+/* FINAL RECOGNITION */
+
+.wbw-final-recognition {
+    margin-top: 55px;
+    background: linear-gradient(135deg,#0a5b30,#174b31);
+    border-radius: 22px;
+    color: #fff;
+    padding: 42px 25px;
+    text-align: center;
+}
+
+.wbw-final-recognition h3 {
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.wbw-final-recognition p {
+    color: #dcefe3;
+    max-width: 850px;
+    margin: 0 auto 25px;
+    line-height: 1.7;
+}
+
+.wbw-recognition-grid {
+    max-width: 850px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+}
+
+.wbw-recognition-box {
+    background: rgba(255,255,255,.10);
+    border: 1px solid rgba(255,255,255,.16);
+    border-radius: 13px;
+    padding: 20px 12px;
+}
+
+.wbw-recognition-box strong {
+    display: block;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+.wbw-recognition-box span {
+    color: #dcefe3;
+    font-size: 12px;
+}
+
+/* COMMON RULES */
+
+.wbw-common-rules {
+    margin-top: 35px;
+    background: #fff;
+    border: 1px solid #dce9df;
+    border-radius: 18px;
+    padding: 30px;
+}
+
+.wbw-common-rules h3 {
+    color: #155d32;
+    text-align: center;
+    margin-bottom: 18px;
+}
+
+.wbw-common-rules ol {
+    max-width: 950px;
+    margin: auto;
+    color: #5f6b63;
+    line-height: 1.7;
+    font-size: 14px;
+}
+
+.wbw-common-rules li {
+    margin-bottom: 8px;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 950px) {
+
+    .wbw-comp-info-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .wbw-comp-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .wbw-recognition-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .wbw-comp-section {
+        padding: 60px 0;
+    }
+
+    .wbw-comp-info-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .wbw-reward-strip {
+        grid-template-columns: 1fr;
+    }
+
+    .wbw-comp-image {
+        height: 180px;
+    }
+
+    .wbw-comp-body {
+        padding: 20px;
+    }
+
+    .wbw-comp-actions {
+        grid-template-columns: 1fr;
+    }
+
+    .wbw-detail {
+        grid-template-columns: 1fr;
+        gap: 2px;
+    }
+
+    .wbw-comp-hero {
+        min-height: 330px;
+    }
+
+    .wbw-comp-hero h2 {
+        font-size: 30px;
+    }
 }/* GLOBAL */
 
         .global {
@@ -1470,7 +2015,1618 @@
         </div>
 
 
-        <!-- COMPETITIONS -->
+        <!-- ============================================================
+     WORLD BAMBOO WEEK 2026
+     ENHANCED ONLINE COMPETITIONS
+     ============================================================ -->
+
+<section id="competitions" class="wbw-comp-section">
+
+<div class="container">
+
+    <!-- HERO -->
+
+    <div class="wbw-comp-hero">
+
+        <div class="wbw-comp-hero-content">
+
+            <img
+                src="images/brtc-logo.png"
+                alt="Bamboo Research and Training Centre"
+                class="wbw-comp-logo"
+            >
+
+            <div class="wbw-open-badge">
+                🔴 ONLINE ENTRIES OPEN NOW
+            </div>
+
+            <h2>
+                🏆 Online Bamboo Competitions
+            </h2>
+
+            <p class="wbw-comp-hero-subtitle">
+                World Bamboo Week 2026 invites participants from
+                India and around the world to create, compete,
+                showcase their talent and celebrate bamboo.
+            </p>
+
+            <div class="wbw-deadline-badge">
+                🔴 FINAL ONLINE SUBMISSION:
+                11 SEPTEMBER 2026
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- EVENT INFORMATION -->
+
+    <div class="wbw-comp-info-grid">
+
+        <div class="wbw-comp-info">
+            <div class="wbw-comp-info-icon">🌏</div>
+            <strong>Participation</strong>
+            <span>India & International</span>
+        </div>
+
+        <div class="wbw-comp-info">
+            <div class="wbw-comp-info-icon">💻</div>
+            <strong>Mode</strong>
+            <span>Online Participation</span>
+        </div>
+
+        <div class="wbw-comp-info">
+            <div class="wbw-comp-info-icon">📅</div>
+            <strong>Final Submission</strong>
+            <span>11 September 2026</span>
+        </div>
+
+        <div class="wbw-comp-info">
+            <div class="wbw-comp-info-icon">🌿</div>
+            <strong>World Bamboo Week</strong>
+            <span>12–18 September 2026</span>
+        </div>
+
+    </div>
+
+
+    <!-- REWARDS -->
+
+    <div class="wbw-reward-strip">
+
+        <div class="wbw-reward">
+            <div class="wbw-reward-icon">🎓</div>
+            <strong>Digital Certificates</strong>
+            <span>
+                Eligible participants will receive
+                Digital Certificates of Participation
+                subject to the applicable competition rules.
+            </span>
+        </div>
+
+        <div class="wbw-reward">
+            <div class="wbw-reward-icon">🏆</div>
+            <strong>Winner Recognition</strong>
+            <span>
+                Selected winners and outstanding entries
+                will receive official recognition.
+            </span>
+        </div>
+
+        <div class="wbw-reward">
+            <div class="wbw-reward-icon">🎋</div>
+            <strong>Exciting Bamboo Goodies</strong>
+            <span>
+                Selected winners may receive exciting
+                bamboo-based goodies/mementos subject
+                to availability and applicable arrangements.
+            </span>
+        </div>
+
+    </div>
+
+
+    <!-- ========================================================
+         01 PHOTOGRAPHY
+         ======================================================== -->
+
+    <div class="wbw-comp-grid">
+
+
+    <article class="wbw-comp-card">
+
+        <div class="wbw-comp-image">
+
+            <img
+                src="images/bamboo-construction.png"
+                alt="Bamboo Photography Contest"
+                loading="lazy"
+            >
+
+            <div class="wbw-comp-number">
+                COMPETITION 01
+            </div>
+
+            <div class="wbw-comp-open">
+                OPEN NOW
+            </div>
+
+        </div>
+
+        <div class="wbw-comp-body">
+
+            <div class="wbw-comp-title-row">
+
+                <div class="wbw-comp-icon">📸</div>
+
+                <h3>
+                    Bamboo Photography Contest
+                </h3>
+
+            </div>
+
+            <p class="wbw-comp-description">
+                Capture the beauty, diversity, culture,
+                livelihoods, products, landscapes and
+                innovative applications of bamboo.
+            </p>
+
+            <div class="wbw-tags">
+                <span class="wbw-tag">India</span>
+                <span class="wbw-tag">International</span>
+                <span class="wbw-tag">Photography</span>
+                <span class="wbw-tag">Original Work</span>
+            </div>
+
+            <div class="wbw-comp-details">
+
+                <div class="wbw-detail">
+                    <strong>Theme</strong>
+                    <span>
+                        Bamboo for a Greener, Resilient
+                        and Sustainable Future
+                    </span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Submission</strong>
+                    <span>
+                        One original photograph through
+                        the official Google Form.
+                    </span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Deadline</strong>
+                    <span>11 September 2026</span>
+                </div>
+
+            </div>
+
+            <div class="wbw-card-reward">
+                🎓 Eligible participants: Digital Certificate<br>
+                🏆 Selected winners: Certificate + 🎋 Bamboo Goodie +
+                Recognition
+            </div>
+
+            <div class="wbw-comp-actions">
+
+                <button
+                    type="button"
+                    class="wbw-guideline-btn"
+                    onclick="toggleWBWGuideline('guideline01', this)">
+                    📋 VIEW FULL GUIDELINES
+                </button>
+
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdefWppKLHNS3-Lg-l9dgiAy4QvrkrMPtZ99oZme4kpzRljdw/viewform"
+                    target="_blank"
+                    rel="noopener"
+                    class="wbw-submit-btn">
+                    📸 SUBMIT ENTRY →
+                </a>
+
+            </div>
+
+            <div id="guideline01" class="wbw-guidelines">
+
+                <h4>Eligibility</h4>
+
+                <ul>
+                    <li>Open to eligible participants from India and other countries.</li>
+                    <li>Students, researchers, professionals, farmers, artisans, photographers and the general public may participate.</li>
+                    <li>Participants must provide accurate information.</li>
+                </ul>
+
+                <h4>What Can Be Submitted?</h4>
+
+                <ul>
+                    <li>Bamboo forests and plantations</li>
+                    <li>Bamboo biodiversity and landscapes</li>
+                    <li>Bamboo farmers and livelihoods</li>
+                    <li>Bamboo architecture and products</li>
+                    <li>Bamboo crafts and traditional practices</li>
+                    <li>Bamboo technology and innovation</li>
+                    <li>Bamboo and climate/environment</li>
+                </ul>
+
+                <h4>Submission Specifications</h4>
+
+                <ul>
+                    <li>Submit one original photograph.</li>
+                    <li>JPG/JPEG format is preferred.</li>
+                    <li>Image should be clear and reasonably high resolution.</li>
+                    <li>Basic cropping and colour/brightness correction are permitted.</li>
+                    <li>Misleading manipulation or composite images should not be submitted as ordinary photographs.</li>
+                    <li>Provide photograph title and description as requested in the form.</li>
+                </ul>
+
+                <h4>Judging Criteria — 100 Marks</h4>
+
+                <table class="wbw-criteria">
+                    <tr><th>Criterion</th><th>Marks</th></tr>
+                    <tr><td>Relevance to bamboo/theme</td><td>25</td></tr>
+                    <tr><td>Creativity & originality</td><td>20</td></tr>
+                    <tr><td>Composition</td><td>20</td></tr>
+                    <tr><td>Technical quality</td><td>15</td></tr>
+                    <tr><td>Storytelling/message</td><td>15</td></tr>
+                    <tr><td>Overall visual impact</td><td>5</td></tr>
+                    <tr><th>Total</th><th>100</th></tr>
+                </table>
+
+                <div class="wbw-rule-box">
+                    <strong>Disqualification:</strong>
+                    Copyright infringement, plagiarism, false information,
+                    offensive material, fraudulent submission or violation
+                    of the competition rules may result in rejection.
+                </div>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <!-- ========================================================
+         02 VIDEOGRAPHY
+         ======================================================== -->
+
+    <article class="wbw-comp-card">
+
+        <div class="wbw-comp-image">
+
+            <img
+                src="images/brtc-aerial.png"
+                alt="Videography and Short Film Competition"
+                loading="lazy"
+            >
+
+            <div class="wbw-comp-number">
+                COMPETITION 02
+            </div>
+
+            <div class="wbw-comp-open">
+                OPEN NOW
+            </div>
+
+        </div>
+
+        <div class="wbw-comp-body">
+
+            <div class="wbw-comp-title-row">
+                <div class="wbw-comp-icon">🎬</div>
+                <h3>
+                    Videography & Short Film Competition
+                </h3>
+            </div>
+
+            <p class="wbw-comp-description">
+                Tell inspiring stories about bamboo,
+                people, innovation, livelihoods, culture,
+                technology and sustainability.
+            </p>
+
+            <div class="wbw-tags">
+                <span class="wbw-tag">Short Film</span>
+                <span class="wbw-tag">Documentary</span>
+                <span class="wbw-tag">Storytelling</span>
+                <span class="wbw-tag">International</span>
+            </div>
+
+            <div class="wbw-comp-details">
+
+                <div class="wbw-detail">
+                    <strong>Theme</strong>
+                    <span>Stories from Bamboo</span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Format</strong>
+                    <span>Original video/short film.</span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Duration</strong>
+                    <span>Recommended 1–10 minutes.</span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Deadline</strong>
+                    <span>11 September 2026</span>
+                </div>
+
+            </div>
+
+            <div class="wbw-card-reward">
+                🎓 Digital Certificate for eligible participants<br>
+                🏆 Selected winners: Certificate + 🎋 Bamboo Goodie +
+                Recognition
+            </div>
+
+            <div class="wbw-comp-actions">
+
+                <button
+                    type="button"
+                    class="wbw-guideline-btn"
+                    onclick="toggleWBWGuideline('guideline02', this)">
+                    📋 VIEW FULL GUIDELINES
+                </button>
+
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSd3--vOxF3xMSu1TpwNYRS8VaabBq3ck3u95EVlxPsZqwvcOA/viewform"
+                    target="_blank"
+                    rel="noopener"
+                    class="wbw-submit-btn">
+                    🎬 SUBMIT VIDEO →
+                </a>
+
+            </div>
+
+            <div id="guideline02" class="wbw-guidelines">
+
+                <h4>Eligibility</h4>
+
+                <ul>
+                    <li>Open to eligible participants from India and internationally.</li>
+                    <li>Students, filmmakers, creators, researchers, institutions and the general public may participate.</li>
+                </ul>
+
+                <h4>Suggested Themes</h4>
+
+                <ul>
+                    <li>Bamboo and rural livelihoods</li>
+                    <li>Bamboo artisans and entrepreneurs</li>
+                    <li>Bamboo architecture</li>
+                    <li>Bamboo technology and innovation</li>
+                    <li>Bamboo and environment</li>
+                    <li>Bamboo products and future applications</li>
+                </ul>
+
+                <h4>Submission Specifications</h4>
+
+                <ul>
+                    <li>Original video/short film.</li>
+                    <li>Recommended duration: 1–10 minutes.</li>
+                    <li>MP4 format preferred.</li>
+                    <li>Follow the submission/link instructions in the Google Form.</li>
+                    <li>Participant must have rights to all music, footage, images and other material used.</li>
+                </ul>
+
+                <h4>Judging Criteria — 100 Marks</h4>
+
+                <table class="wbw-criteria">
+                    <tr><th>Criterion</th><th>Marks</th></tr>
+                    <tr><td>Story & concept</td><td>25</td></tr>
+                    <tr><td>Bamboo relevance</td><td>20</td></tr>
+                    <tr><td>Creativity</td><td>15</td></tr>
+                    <tr><td>Cinematography/visual quality</td><td>15</td></tr>
+                    <tr><td>Editing & presentation</td><td>10</td></tr>
+                    <tr><td>Sound/audio quality</td><td>5</td></tr>
+                    <tr><td>Message & impact</td><td>10</td></tr>
+                    <tr><th>Total</th><th>100</th></tr>
+                </table>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <!-- ========================================================
+         03 REEL
+         ======================================================== -->
+
+    <article class="wbw-comp-card">
+
+        <div class="wbw-comp-image">
+
+            <img
+                src="images/bambusetum.png"
+                alt="Bamboo Reel Challenge"
+                loading="lazy"
+            >
+
+            <div class="wbw-comp-number">
+                COMPETITION 03
+            </div>
+
+            <div class="wbw-comp-open">
+                OPEN NOW
+            </div>
+
+        </div>
+
+        <div class="wbw-comp-body">
+
+            <div class="wbw-comp-title-row">
+                <div class="wbw-comp-icon">📱</div>
+                <h3>Bamboo Reel Challenge</h3>
+            </div>
+
+            <p class="wbw-comp-description">
+                Create a short, creative and engaging reel
+                that inspires people to discover the importance
+                and possibilities of bamboo.
+            </p>
+
+            <div class="wbw-tags">
+                <span class="wbw-tag">60 Seconds</span>
+                <span class="wbw-tag">Social Media</span>
+                <span class="wbw-tag">Youth</span>
+                <span class="wbw-tag">Creators</span>
+            </div>
+
+            <div class="wbw-comp-details">
+
+                <div class="wbw-detail">
+                    <strong>Theme</strong>
+                    <span>60 Seconds for Bamboo</span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Format</strong>
+                    <span>Vertical 9:16 preferred.</span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Duration</strong>
+                    <span>Recommended up to 60 seconds.</span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Deadline</strong>
+                    <span>11 September 2026</span>
+                </div>
+
+            </div>
+
+            <div class="wbw-card-reward">
+                🏆 Recognition categories may include creative,
+                educational, viral, editing and audience-focused
+                recognition, subject to the official rules.
+            </div>
+
+            <div class="wbw-comp-actions">
+
+                <button
+                    type="button"
+                    class="wbw-guideline-btn"
+                    onclick="toggleWBWGuideline('guideline03', this)">
+                    📋 VIEW FULL GUIDELINES
+                </button>
+
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSfH6A6HHarqAr17BwTnHFu67RBY0i5rNzqUIXzy3jJzbrDPDg/viewform"
+                    target="_blank"
+                    rel="noopener"
+                    class="wbw-submit-btn">
+                    📱 SUBMIT REEL →
+                </a>
+
+            </div>
+
+            <div id="guideline03" class="wbw-guidelines">
+
+                <h4>Eligibility</h4>
+
+                <ul>
+                    <li>Open to students, youth, creators, professionals and the general public.</li>
+                    <li>India and international participation is welcome.</li>
+                </ul>
+
+                <h4>Submission Specifications</h4>
+
+                <ul>
+                    <li>One original reel.</li>
+                    <li>Vertical 9:16 format preferred.</li>
+                    <li>Recommended duration up to 60 seconds.</li>
+                    <li>Content must have a clear bamboo connection.</li>
+                    <li>Follow the link/file instructions in the official Google Form.</li>
+                </ul>
+
+                <h4>Judging Criteria — 100 Marks</h4>
+
+                <table class="wbw-criteria">
+                    <tr><th>Criterion</th><th>Marks</th></tr>
+                    <tr><td>Creativity</td><td>25</td></tr>
+                    <tr><td>Bamboo message</td><td>20</td></tr>
+                    <tr><td>Engagement potential</td><td>20</td></tr>
+                    <tr><td>Originality</td><td>15</td></tr>
+                    <tr><td>Visual presentation</td><td>10</td></tr>
+                    <tr><td>Overall impact</td><td>10</td></tr>
+                    <tr><th>Total</th><th>100</th></tr>
+                </table>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <!-- ========================================================
+         04 QUIZ
+         ======================================================== -->
+
+    <article class="wbw-comp-card">
+
+        <div class="wbw-comp-image">
+
+            <img
+                src="images/world-bamboo-day.png"
+                alt="National and International Bamboo Quiz"
+                loading="lazy"
+            >
+
+            <div class="wbw-comp-number">
+                COMPETITION 04
+            </div>
+
+            <div class="wbw-comp-open">
+                OPEN NOW
+            </div>
+
+        </div>
+
+        <div class="wbw-comp-body">
+
+            <div class="wbw-comp-title-row">
+                <div class="wbw-comp-icon">🧠</div>
+                <h3>National & International Bamboo Quiz</h3>
+            </div>
+
+            <p class="wbw-comp-description">
+                Test your knowledge of bamboo science,
+                species, ecology, culture, technology,
+                products and sustainable development.
+            </p>
+
+            <div class="wbw-tags">
+                <span class="wbw-tag">Knowledge</span>
+                <span class="wbw-tag">India</span>
+                <span class="wbw-tag">International</span>
+                <span class="wbw-tag">Online</span>
+            </div>
+
+            <div class="wbw-comp-details">
+
+                <div class="wbw-detail">
+                    <strong>Theme</strong>
+                    <span>Know Bamboo • Know the Future</span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Mode</strong>
+                    <span>Online quiz</span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Topics</strong>
+                    <span>
+                        Species, ecology, cultivation,
+                        products, technology, culture and more.
+                    </span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Deadline</strong>
+                    <span>11 September 2026</span>
+                </div>
+
+            </div>
+
+            <div class="wbw-card-reward">
+                🎓 Digital certificates and recognition for
+                eligible/selected participants according to
+                the quiz rules and results.
+            </div>
+
+            <div class="wbw-comp-actions">
+
+                <button
+                    type="button"
+                    class="wbw-guideline-btn"
+                    onclick="toggleWBWGuideline('guideline04', this)">
+                    📋 VIEW FULL GUIDELINES
+                </button>
+
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSe8_YfSFqdwLF44CM5UT_3Se6Jf2-qPbBskrZQbxDE_maj2lA/viewform"
+                    target="_blank"
+                    rel="noopener"
+                    class="wbw-submit-btn">
+                    🧠 TAKE THE QUIZ →
+                </a>
+
+            </div>
+
+            <div id="guideline04" class="wbw-guidelines">
+
+                <h4>Eligibility</h4>
+
+                <ul>
+                    <li>Open to participants from India and internationally.</li>
+                    <li>Participants must provide accurate registration details.</li>
+                    <li>Only submissions accepted by the official quiz system will be considered.</li>
+                </ul>
+
+                <h4>Knowledge Areas</h4>
+
+                <ul>
+                    <li>Bamboo species and botany</li>
+                    <li>Bamboo ecology and environment</li>
+                    <li>Bamboo cultivation and propagation</li>
+                    <li>Bamboo products and processing</li>
+                    <li>Bamboo architecture and technology</li>
+                    <li>Bamboo culture and history</li>
+                    <li>Bamboo economy and sustainability</li>
+                </ul>
+
+                <h4>Ranking</h4>
+
+                <ul>
+                    <li>Correct answers will determine the score.</li>
+                    <li>Where applicable, completion time may be used as a tie-breaker.</li>
+                    <li>The final ranking will be based on the official quiz result.</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <!-- ========================================================
+         05 CROSSWORD
+         ======================================================== -->
+
+    <article class="wbw-comp-card">
+
+        <div class="wbw-comp-image">
+
+            <img
+                src="images/bambusetum.png"
+                alt="Bamboo Crossword Challenge"
+                loading="lazy"
+            >
+
+            <div class="wbw-comp-number">
+                COMPETITION 05
+            </div>
+
+            <div class="wbw-comp-open">
+                OPEN NOW
+            </div>
+
+        </div>
+
+        <div class="wbw-comp-body">
+
+            <div class="wbw-comp-title-row">
+                <div class="wbw-comp-icon">🧩</div>
+                <h3>Bamboo Crossword Challenge</h3>
+            </div>
+
+            <p class="wbw-comp-description">
+                Discover bamboo through an enjoyable
+                crossword challenge covering bamboo,
+                science, products, culture and technology.
+            </p>
+
+            <div class="wbw-tags">
+                <span class="wbw-tag">Puzzle</span>
+                <span class="wbw-tag">Knowledge</span>
+                <span class="wbw-tag">Online</span>
+            </div>
+
+            <div class="wbw-comp-details">
+
+                <div class="wbw-detail">
+                    <strong>Eligibility</strong>
+                    <span>Open to eligible participants.</span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Mode</strong>
+                    <span>Online</span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Submission</strong>
+                    <span>Completed crossword as requested in the form.</span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Deadline</strong>
+                    <span>11 September 2026</span>
+                </div>
+
+            </div>
+
+            <div class="wbw-card-reward">
+                🎓 Eligible participants may receive a digital
+                certificate; selected winners receive recognition
+                and bamboo goodies subject to the rules.
+            </div>
+
+            <div class="wbw-comp-actions">
+
+                <button
+                    type="button"
+                    class="wbw-guideline-btn"
+                    onclick="toggleWBWGuideline('guideline05', this)">
+                    📋 VIEW FULL GUIDELINES
+                </button>
+
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSefnqJSZiWFSoDGamSGhfmMiP2zN-RNCkfx8sqIZ76kc7R2iQ/viewform"
+                    target="_blank"
+                    rel="noopener"
+                    class="wbw-submit-btn">
+                    🧩 PARTICIPATE NOW →
+                </a>
+
+            </div>
+
+            <div id="guideline05" class="wbw-guidelines">
+
+                <h4>Submission Rules</h4>
+
+                <ul>
+                    <li>Complete the official bamboo crossword.</li>
+                    <li>Submit the completed response using the official Google Form.</li>
+                    <li>Only eligible and valid submissions will be considered.</li>
+                    <li>Copied or fraudulent submissions may be rejected.</li>
+                </ul>
+
+                <h4>Judging Criteria</h4>
+
+                <table class="wbw-criteria">
+                    <tr><th>Criterion</th><th>Weight</th></tr>
+                    <tr><td>Correct answers</td><td>80</td></tr>
+                    <tr><td>Completion/time, where applicable</td><td>20</td></tr>
+                    <tr><th>Total</th><th>100</th></tr>
+                </table>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <!-- ========================================================
+         06 SELFIE
+         ======================================================== -->
+
+    <article class="wbw-comp-card">
+
+        <div class="wbw-comp-image">
+
+            <img
+                src="images/brtc-entrance.png"
+                alt="Selfie with Green Gold"
+                loading="lazy"
+            >
+
+            <div class="wbw-comp-number">
+                COMPETITION 06
+            </div>
+
+            <div class="wbw-comp-open">
+                OPEN NOW
+            </div>
+
+        </div>
+
+        <div class="wbw-comp-body">
+
+            <div class="wbw-comp-title-row">
+                <div class="wbw-comp-icon">🤳</div>
+                <h3>Selfie with Green Gold</h3>
+            </div>
+
+            <p class="wbw-comp-description">
+                Celebrate bamboo by sharing your creative
+                bamboo moment with a plantation, product,
+                structure, craft or bamboo activity.
+            </p>
+
+            <div class="wbw-tags">
+                <span class="wbw-tag">Selfie</span>
+                <span class="wbw-tag">Creative</span>
+                <span class="wbw-tag">Bamboo</span>
+                <span class="wbw-tag">Global</span>
+            </div>
+
+            <div class="wbw-comp-details">
+
+                <div class="wbw-detail">
+                    <strong>Theme</strong>
+                    <span>My Bamboo Moment</span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Submission</strong>
+                    <span>One original selfie/photo.</span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Caption</strong>
+                    <span>Short bamboo-related caption encouraged.</span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Deadline</strong>
+                    <span>11 September 2026</span>
+                </div>
+
+            </div>
+
+            <div class="wbw-card-reward">
+                🎓 Digital Certificate for eligible participants<br>
+                🎋 Selected entries may receive bamboo goodies and recognition.
+            </div>
+
+            <div class="wbw-comp-actions">
+
+                <button
+                    type="button"
+                    class="wbw-guideline-btn"
+                    onclick="toggleWBWGuideline('guideline06', this)">
+                    📋 VIEW FULL GUIDELINES
+                </button>
+
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSf76FM6VZYGKAHRj2a-V-G0CR3MO8UXFzAwDJjq5VdRr-3blQ/viewform"
+                    target="_blank"
+                    rel="noopener"
+                    class="wbw-submit-btn">
+                    🤳 SUBMIT SELFIE →
+                </a>
+
+            </div>
+
+            <div id="guideline06" class="wbw-guidelines">
+
+                <h4>Eligible Entries</h4>
+
+                <ul>
+                    <li>Selfie with bamboo plantations or forests.</li>
+                    <li>Selfie with bamboo products or crafts.</li>
+                    <li>Selfie at bamboo structures or installations.</li>
+                    <li>Creative bamboo-related moments.</li>
+                </ul>
+
+                <h4>Submission Requirements</h4>
+
+                <ul>
+                    <li>Submit one original photograph.</li>
+                    <li>Participant should have permission to use the photograph.</li>
+                    <li>The image must have a clear connection with bamboo.</li>
+                    <li>Provide a suitable caption/description.</li>
+                </ul>
+
+                <h4>Judging Criteria — 100 Marks</h4>
+
+                <table class="wbw-criteria">
+                    <tr><th>Criterion</th><th>Marks</th></tr>
+                    <tr><td>Bamboo relevance</td><td>25</td></tr>
+                    <tr><td>Creativity</td><td>25</td></tr>
+                    <tr><td>Composition</td><td>20</td></tr>
+                    <tr><td>Message/caption</td><td>15</td></tr>
+                    <tr><td>Overall appeal</td><td>15</td></tr>
+                    <tr><th>Total</th><th>100</th></tr>
+                </table>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <!-- ========================================================
+         07 SKETCH & PAINTING
+         ======================================================== -->
+
+    <article class="wbw-comp-card">
+
+        <div class="wbw-comp-image">
+
+            <img
+                src="images/bamboo-construction.png"
+                alt="Bamboo Sketch and Painting Competition"
+                loading="lazy"
+            >
+
+            <div class="wbw-comp-number">
+                COMPETITION 07
+            </div>
+
+            <div class="wbw-comp-open">
+                OPEN NOW
+            </div>
+
+        </div>
+
+        <div class="wbw-comp-body">
+
+            <div class="wbw-comp-title-row">
+                <div class="wbw-comp-icon">🎨</div>
+                <h3>Bamboo Sketch & Painting Competition</h3>
+            </div>
+
+            <p class="wbw-comp-description">
+                Express your creativity through artwork inspired
+                by bamboo, nature, sustainability, culture,
+                technology and the future.
+            </p>
+
+            <div class="wbw-tags">
+                <span class="wbw-tag">School</span>
+                <span class="wbw-tag">College</span>
+                <span class="wbw-tag">Open</span>
+                <span class="wbw-tag">Art</span>
+            </div>
+
+            <div class="wbw-comp-details">
+
+                <div class="wbw-detail">
+                    <strong>Theme</strong>
+                    <span>Bamboo – Nature, Culture and Future</span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Submission</strong>
+                    <span>Clear scan/photo of original artwork.</span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Category</strong>
+                    <span>As specified in the official form.</span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Deadline</strong>
+                    <span>11 September 2026</span>
+                </div>
+
+            </div>
+
+            <div class="wbw-card-reward">
+                🎨 Selected artwork may receive certificates,
+                exciting bamboo goodies and special recognition.
+            </div>
+
+            <div class="wbw-comp-actions">
+
+                <button
+                    type="button"
+                    class="wbw-guideline-btn"
+                    onclick="toggleWBWGuideline('guideline07', this)">
+                    📋 VIEW FULL GUIDELINES
+                </button>
+
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSd-O6jpyMQD4biTPpQnoO6a0lgJ_SVC2rcsiHQkhxQi5H9p5A/viewform"
+                    target="_blank"
+                    rel="noopener"
+                    class="wbw-submit-btn">
+                    🎨 SUBMIT ARTWORK →
+                </a>
+
+            </div>
+
+            <div id="guideline07" class="wbw-guidelines">
+
+                <h4>Eligible Participants</h4>
+
+                <ul>
+                    <li>School students</li>
+                    <li>College/university students</li>
+                    <li>Artists and general participants</li>
+                    <li>International participants</li>
+                </ul>
+
+                <h4>Suggested Themes</h4>
+
+                <ul>
+                    <li>Bamboo and Nature</li>
+                    <li>Bamboo and Climate Action</li>
+                    <li>Sustainable Living</li>
+                    <li>Bamboo Culture and Tradition</li>
+                    <li>Future Cities and Bamboo</li>
+                    <li>Bamboo Innovation</li>
+                </ul>
+
+                <h4>Submission</h4>
+
+                <ul>
+                    <li>Artwork must be original.</li>
+                    <li>Upload a clear photograph/scan through the official form.</li>
+                    <li>Provide artwork title and description.</li>
+                    <li>Digital artwork should follow the specific form instructions.</li>
+                </ul>
+
+                <h4>Judging Criteria — 100 Marks</h4>
+
+                <table class="wbw-criteria">
+                    <tr><th>Criterion</th><th>Marks</th></tr>
+                    <tr><td>Creativity</td><td>25</td></tr>
+                    <tr><td>Theme relevance</td><td>20</td></tr>
+                    <tr><td>Artistic skill</td><td>20</td></tr>
+                    <tr><td>Originality</td><td>15</td></tr>
+                    <tr><td>Composition</td><td>10</td></tr>
+                    <tr><td>Message/impact</td><td>10</td></tr>
+                    <tr><th>Total</th><th>100</th></tr>
+                </table>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <!-- ========================================================
+         08 SLOGAN
+         ======================================================== -->
+
+    <article class="wbw-comp-card">
+
+        <div class="wbw-comp-image">
+
+            <img
+                src="images/world-bamboo-week-2026.png"
+                alt="Bamboo Slogan Competition"
+                loading="lazy"
+            >
+
+            <div class="wbw-comp-number">
+                COMPETITION 08
+            </div>
+
+            <div class="wbw-comp-open">
+                OPEN NOW
+            </div>
+
+        </div>
+
+        <div class="wbw-comp-body">
+
+            <div class="wbw-comp-title-row">
+                <div class="wbw-comp-icon">✍️</div>
+                <h3>Bamboo Slogan Competition</h3>
+            </div>
+
+            <p class="wbw-comp-description">
+                Create a powerful, original and memorable slogan
+                communicating the importance and future potential
+                of bamboo.
+            </p>
+
+            <div class="wbw-tags">
+                <span class="wbw-tag">Creativity</span>
+                <span class="wbw-tag">Sustainability</span>
+                <span class="wbw-tag">Bamboo</span>
+                <span class="wbw-tag">Global</span>
+            </div>
+
+            <div class="wbw-comp-details">
+
+                <div class="wbw-detail">
+                    <strong>Theme</strong>
+                    <span>Bamboo • Sustainability • Future</span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Submission</strong>
+                    <span>Original slogan through Google Form.</span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Language</strong>
+                    <span>As specified in the official form.</span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Deadline</strong>
+                    <span>11 September 2026</span>
+                </div>
+
+            </div>
+
+            <div class="wbw-card-reward">
+                🏆 Selected slogans may receive Certificate +
+                🎋 Bamboo Goodie + Special Recognition.
+            </div>
+
+            <div class="wbw-comp-actions">
+
+                <button
+                    type="button"
+                    class="wbw-guideline-btn"
+                    onclick="toggleWBWGuideline('guideline08', this)">
+                    📋 VIEW FULL GUIDELINES
+                </button>
+
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLScvfD_A3GF9MWq5uN2XHqjLd03fD6uVodtaNYbkv2ElPYkJ9g/viewform"
+                    target="_blank"
+                    rel="noopener"
+                    class="wbw-submit-btn">
+                    ✍️ SUBMIT SLOGAN →
+                </a>
+
+            </div>
+
+            <div id="guideline08" class="wbw-guidelines">
+
+                <h4>Eligibility</h4>
+
+                <ul>
+                    <li>Open to eligible participants from India and internationally.</li>
+                    <li>Participants must submit an original slogan.</li>
+                </ul>
+
+                <h4>Rules</h4>
+
+                <ul>
+                    <li>Slogan should be concise and memorable.</li>
+                    <li>It must relate directly to bamboo.</li>
+                    <li>Offensive, discriminatory or inappropriate language is prohibited.</li>
+                    <li>Participant should not copy an existing slogan.</li>
+                </ul>
+
+                <h4>Judging Criteria — 100 Marks</h4>
+
+                <table class="wbw-criteria">
+                    <tr><th>Criterion</th><th>Marks</th></tr>
+                    <tr><td>Originality</td><td>30</td></tr>
+                    <tr><td>Relevance</td><td>25</td></tr>
+                    <tr><td>Creativity</td><td>20</td></tr>
+                    <tr><td>Memorability</td><td>15</td></tr>
+                    <tr><td>Communication impact</td><td>10</td></tr>
+                    <tr><th>Total</th><th>100</th></tr>
+                </table>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <!-- ========================================================
+         09 ESSAY
+         ======================================================== -->
+
+    <article class="wbw-comp-card">
+
+        <div class="wbw-comp-image">
+
+            <img
+                src="images/brtc-masterplan.png"
+                alt="Bamboo Essay Competition"
+                loading="lazy"
+            >
+
+            <div class="wbw-comp-number">
+                COMPETITION 09
+            </div>
+
+            <div class="wbw-comp-open">
+                OPEN NOW
+            </div>
+
+        </div>
+
+        <div class="wbw-comp-body">
+
+            <div class="wbw-comp-title-row">
+                <div class="wbw-comp-icon">📝</div>
+                <h3>Bamboo Essay Competition</h3>
+            </div>
+
+            <p class="wbw-comp-description">
+                Share your ideas and perspectives on bamboo,
+                climate resilience, sustainability, livelihoods,
+                technology and the future bamboo economy.
+            </p>
+
+            <div class="wbw-tags">
+                <span class="wbw-tag">Essay</span>
+                <span class="wbw-tag">Research</span>
+                <span class="wbw-tag">Students</span>
+                <span class="wbw-tag">Open</span>
+            </div>
+
+            <div class="wbw-comp-details">
+
+                <div class="wbw-detail">
+                    <strong>Topics</strong>
+                    <span>
+                        Climate, livelihoods, technology,
+                        construction, circular economy and future.
+                    </span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Length</strong>
+                    <span>Follow the official Google Form instructions.</span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Submission</strong>
+                    <span>Essay through official Google Form.</span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Deadline</strong>
+                    <span>11 September 2026</span>
+                </div>
+
+            </div>
+
+            <div class="wbw-card-reward">
+                📜 Selected essays may receive Certificate +
+                🎋 Bamboo Goodie + Recognition.
+            </div>
+
+            <div class="wbw-comp-actions">
+
+                <button
+                    type="button"
+                    class="wbw-guideline-btn"
+                    onclick="toggleWBWGuideline('guideline09', this)">
+                    📋 VIEW FULL GUIDELINES
+                </button>
+
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeRIoNy0MhHd-LitPY8xS_HqhOqBuPGDgzdiDMWsqFMY8Q6Ag/viewform"
+                    target="_blank"
+                    rel="noopener"
+                    class="wbw-submit-btn">
+                    📝 SUBMIT ESSAY →
+                </a>
+
+            </div>
+
+            <div id="guideline09" class="wbw-guidelines">
+
+                <h4>Suggested Topics</h4>
+
+                <ul>
+                    <li>Bamboo for Climate Resilience</li>
+                    <li>Bamboo and Sustainable Development</li>
+                    <li>Bamboo-Based Rural Livelihoods</li>
+                    <li>Bamboo Technology and Innovation</li>
+                    <li>Bamboo for Green Construction</li>
+                    <li>Future of India's Bamboo Economy</li>
+                    <li>Bamboo and Circular Bioeconomy</li>
+                    <li>Bamboo for Sustainable Communities</li>
+                </ul>
+
+                <h4>Submission Requirements</h4>
+
+                <ul>
+                    <li>Essay must be original work.</li>
+                    <li>Participant must provide title and author details.</li>
+                    <li>Follow the language and word-count instructions in the official form.</li>
+                    <li>Plagiarism may result in disqualification.</li>
+                </ul>
+
+                <h4>Judging Criteria — 100 Marks</h4>
+
+                <table class="wbw-criteria">
+                    <tr><th>Criterion</th><th>Marks</th></tr>
+                    <tr><td>Understanding of topic</td><td>20</td></tr>
+                    <tr><td>Content/research</td><td>20</td></tr>
+                    <tr><td>Originality of ideas</td><td>20</td></tr>
+                    <tr><td>Analysis & arguments</td><td>15</td></tr>
+                    <tr><td>Structure & coherence</td><td>10</td></tr>
+                    <tr><td>Language</td><td>10</td></tr>
+                    <tr><td>Conclusion/impact</td><td>5</td></tr>
+                    <tr><th>Total</th><th>100</th></tr>
+                </table>
+
+                <div class="wbw-rule-box">
+                    <strong>Originality:</strong>
+                    Participants should submit their own work.
+                    Plagiarism or material falsely represented as
+                    original may result in rejection.
+                </div>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+    <!-- ========================================================
+         10 DEBATE
+         ======================================================== -->
+
+    <article class="wbw-comp-card">
+
+        <div class="wbw-comp-image">
+
+            <img
+                src="images/brtc-aerial.png"
+                alt="Online Bamboo Debate Competition"
+                loading="lazy"
+            >
+
+            <div class="wbw-comp-number">
+                COMPETITION 10
+            </div>
+
+            <div class="wbw-comp-open">
+                OPEN NOW
+            </div>
+
+        </div>
+
+        <div class="wbw-comp-body">
+
+            <div class="wbw-comp-title-row">
+                <div class="wbw-comp-icon">🎤</div>
+                <h3>Online Bamboo Debate Competition</h3>
+            </div>
+
+            <p class="wbw-comp-description">
+                Present informed arguments and perspectives
+                on bamboo, sustainability, development,
+                environment, technology and society.
+            </p>
+
+            <div class="wbw-tags">
+                <span class="wbw-tag">Debate</span>
+                <span class="wbw-tag">Youth</span>
+                <span class="wbw-tag">Ideas</span>
+                <span class="wbw-tag">Online</span>
+            </div>
+
+            <div class="wbw-comp-details">
+
+                <div class="wbw-detail">
+                    <strong>Theme</strong>
+                    <span>
+                        Bamboo and the Sustainable Future
+                    </span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Topics</strong>
+                    <span>
+                        Climate, construction, livelihoods,
+                        technology, policy and economy.
+                    </span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Submission</strong>
+                    <span>Follow official Google Form instructions.</span>
+                </div>
+
+                <div class="wbw-detail">
+                    <strong>Deadline</strong>
+                    <span>11 September 2026</span>
+                </div>
+
+            </div>
+
+            <div class="wbw-card-reward">
+                🎤 Selected speakers may receive Certificate +
+                🎋 Bamboo Goodie + Special Recognition.
+            </div>
+
+            <div class="wbw-comp-actions">
+
+                <button
+                    type="button"
+                    class="wbw-guideline-btn"
+                    onclick="toggleWBWGuideline('guideline10', this)">
+                    📋 VIEW FULL GUIDELINES
+                </button>
+
+                <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSdzYoZgDPFcfSKY7ruGBdVNGDOH5Ygzu4fZk6hZrpyE9EH47Q/viewform"
+                    target="_blank"
+                    rel="noopener"
+                    class="wbw-submit-btn">
+                    🎤 SUBMIT DEBATE →
+                </a>
+
+            </div>
+
+            <div id="guideline10" class="wbw-guidelines">
+
+                <h4>Eligibility</h4>
+
+                <ul>
+                    <li>Open to eligible participants from India and internationally.</li>
+                    <li>Participants must follow the official debate format specified in the submission form.</li>
+                </ul>
+
+                <h4>Suggested Debate Areas</h4>
+
+                <ul>
+                    <li>Can bamboo become a major sustainable material?</li>
+                    <li>Bamboo and climate action</li>
+                    <li>Bamboo and rural employment</li>
+                    <li>Bamboo entrepreneurship</li>
+                    <li>Bamboo construction</li>
+                    <li>Bamboo technology and innovation</li>
+                    <li>Bamboo economy and policy</li>
+                </ul>
+
+                <h4>Judging Criteria — 100 Marks</h4>
+
+                <table class="wbw-criteria">
+                    <tr><th>Criterion</th><th>Marks</th></tr>
+                    <tr><td>Knowledge & understanding</td><td>20</td></tr>
+                    <tr><td>Strength of arguments</td><td>25</td></tr>
+                    <tr><td>Evidence/examples</td><td>15</td></tr>
+                    <tr><td>Logical reasoning</td><td>15</td></tr>
+                    <tr><td>Communication</td><td>10</td></tr>
+                    <tr><td>Rebuttal/counterargument</td><td>10</td></tr>
+                    <tr><td>Overall impact</td><td>5</td></tr>
+                    <tr><th>Total</th><th>100</th></tr>
+                </table>
+
+            </div>
+
+        </div>
+
+    </article>
+
+
+    </div>
+
+
+    <!-- ========================================================
+         COMMON RULES
+         ======================================================== -->
+
+    <div class="wbw-common-rules">
+
+        <h3>
+            📋 Common Competition Rules
+        </h3>
+
+        <ol>
+
+            <li>
+                Participants may participate in multiple competitions,
+                subject to the individual competition rules.
+            </li>
+
+            <li>
+                All entries must be original and submitted by the participant.
+            </li>
+
+            <li>
+                Participants are responsible for obtaining permission
+                for third-party copyrighted material used in their entry.
+            </li>
+
+            <li>
+                Plagiarism, fraudulent submissions, copyright infringement,
+                offensive content or false information may result in
+                disqualification.
+            </li>
+
+            <li>
+                Participants must provide accurate contact information.
+            </li>
+
+            <li>
+                The final online submission deadline is
+                <strong>11 September 2026</strong>, unless a specific
+                competition announcement states otherwise.
+            </li>
+
+            <li>
+                Late submissions may not be considered.
+            </li>
+
+            <li>
+                Selected entries may be showcased through official
+                World Bamboo Week/BRTC communication platforms,
+                subject to applicable permissions.
+            </li>
+
+            <li>
+                The authorised judging committee's decision shall be
+                final and binding.
+            </li>
+
+            <li>
+                Certificates and physical bamboo goodies are subject
+                to eligibility verification, applicable competition
+                rules, availability and logistical arrangements.
+            </li>
+
+        </ol>
+
+    </div>
+
+
+    <!-- ========================================================
+         FINAL RECOGNITION
+         ======================================================== -->
+
+    <div class="wbw-final-recognition">
+
+        <h3>
+            🎓 Certificates + 🎋 Bamboo Goodies + 🏆 Recognition
+        </h3>
+
+        <p>
+            World Bamboo Week 2026 celebrates participation,
+            creativity, knowledge, innovation and contribution
+            towards a sustainable bamboo future.
+        </p>
+
+        <div class="wbw-recognition-grid">
+
+            <div class="wbw-recognition-box">
+                <strong>🎓 Participation</strong>
+                <span>
+                    Digital Certificate for eligible participants
+                </span>
+            </div>
+
+            <div class="wbw-recognition-box">
+                <strong>🏆 Winners</strong>
+                <span>
+                    Winner/selected recognition and certificates
+                </span>
+            </div>
+
+            <div class="wbw-recognition-box">
+                <strong>🎋 Bamboo Goodies</strong>
+                <span>
+                    Exciting bamboo-based goodies/mementos
+                    for selected recipients
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+</section>
 
         <div class="competition-grid-enhanced">
 
@@ -3054,5 +5210,51 @@
 
     </script>
 
-</body>
+<script>
+/* ============================================================
+   WORLD BAMBOO WEEK 2026
+   COMPETITION GUIDELINE TOGGLE
+   ============================================================ */
+
+function toggleWBWGuideline(id, button) {
+
+    const panel = document.getElementById(id);
+
+    if (!panel) {
+        return;
+    }
+
+    const isOpen = panel.classList.contains("active");
+
+    /* Close all guideline panels */
+
+    document.querySelectorAll(".wbw-guidelines").forEach(function(item) {
+        item.classList.remove("active");
+    });
+
+    /* Reset all buttons */
+
+    document.querySelectorAll(".wbw-guideline-btn").forEach(function(btn) {
+        btn.innerHTML = "📋 VIEW FULL GUIDELINES";
+    });
+
+    /* Open selected panel */
+
+    if (!isOpen) {
+
+        panel.classList.add("active");
+
+        button.innerHTML = "▲ HIDE GUIDELINES";
+
+        setTimeout(function() {
+
+            panel.scrollIntoView({
+                behavior: "smooth",
+                block: "nearest"
+            });
+
+        }, 100);
+    }
+}
+</script></body>
 </html>
