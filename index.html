@@ -1397,6 +1397,360 @@
     .wbw-comp-hero h2 {
         font-size: 30px;
     }
+}/* ============================================================
+   WORLD BAMBOO WEEK 2026
+   12–18 SEPTEMBER PROGRAMME
+   ============================================================ */
+
+.wbw-programme-section {
+    background: #ffffff;
+    padding: 90px 0;
+    position: relative;
+}
+
+.wbw-programme-section .container {
+    max-width: 1180px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+/* PROGRAMME HERO */
+
+.wbw-programme-hero {
+    position: relative;
+    min-height: 330px;
+    border-radius: 28px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 45px;
+
+    background:
+        linear-gradient(
+            rgba(4,70,37,.76),
+            rgba(4,91,44,.86)
+        ),
+        url("images/world-bamboo-week-2026.png")
+        center/cover no-repeat;
+
+    box-shadow: 0 18px 45px rgba(0,70,35,.17);
+}
+
+.wbw-programme-hero-content {
+    color: #fff;
+    padding: 45px 25px;
+    max-width: 900px;
+}
+
+.wbw-programme-hero h2 {
+    color: #fff;
+    font-size: clamp(30px,5vw,50px);
+    margin: 10px 0;
+    line-height: 1.12;
+}
+
+.wbw-programme-hero p {
+    color: #e9fff0;
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 10px auto;
+}
+
+.wbw-programme-date-badge {
+    display: inline-block;
+    background: #fff;
+    color: #155d32;
+    padding: 10px 22px;
+    border-radius: 30px;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+/* DAY NAVIGATION */
+
+.wbw-day-nav {
+    display: grid;
+    grid-template-columns: repeat(7,1fr);
+    gap: 8px;
+    margin-bottom: 35px;
+}
+
+.wbw-day-nav button {
+    border: 1px solid #dce9df;
+    background: #f6faf7;
+    color: #155d32;
+    border-radius: 10px;
+    padding: 13px 6px;
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 12px;
+    transition: all .2s ease;
+}
+
+.wbw-day-nav button:hover,
+.wbw-day-nav button.active {
+    background: #168447;
+    color: #fff;
+    border-color: #168447;
+}
+
+.wbw-day-nav button span {
+    display: block;
+    font-size: 10px;
+    margin-bottom: 4px;
+    opacity: .8;
+}
+
+/* DAY PANEL */
+
+.wbw-day-panel {
+    display: none;
+    animation: wbwFadeIn .3s ease;
+}
+
+.wbw-day-panel.active {
+    display: block;
+}
+
+@keyframes wbwFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* DAY HEADER */
+
+.wbw-day-header {
+    background: linear-gradient(135deg,#edf8f0,#f8fcf9);
+    border: 1px solid #dce9df;
+    border-radius: 20px;
+    padding: 28px;
+    margin-bottom: 22px;
+}
+
+.wbw-day-header-top {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.wbw-day-number {
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+    border-radius: 17px;
+    background: #168447;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 900;
+}
+
+.wbw-day-number small {
+    font-size: 10px;
+}
+
+.wbw-day-number strong {
+    font-size: 25px;
+    line-height: 1;
+}
+
+.wbw-day-header h3 {
+    margin: 0 0 5px;
+    color: #155d32;
+    font-size: 25px;
+}
+
+.wbw-day-header p {
+    margin: 0;
+    color: #66736b;
+    line-height: 1.5;
+}
+
+.wbw-day-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-top: 18px;
+}
+
+.wbw-day-badge {
+    background: #fff;
+    border: 1px solid #dce9df;
+    color: #155d32;
+    padding: 7px 11px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+/* PROGRAMME SCHEDULE */
+
+.wbw-schedule {
+    display: grid;
+    gap: 14px;
+}
+
+.wbw-schedule-item {
+    display: grid;
+    grid-template-columns: 125px 1fr;
+    gap: 20px;
+    background: #fff;
+    border: 1px solid #e0eae3;
+    border-radius: 16px;
+    padding: 22px;
+    box-shadow: 0 5px 18px rgba(0,0,0,.04);
+}
+
+.wbw-schedule-time {
+    color: #168447;
+    font-weight: 900;
+    font-size: 14px;
+    padding-top: 3px;
+}
+
+.wbw-schedule-content h4 {
+    margin: 0 0 7px;
+    color: #173b2a;
+    font-size: 17px;
+}
+
+.wbw-schedule-content p {
+    margin: 0 0 8px;
+    color: #68756d;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.wbw-schedule-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+.wbw-schedule-tag {
+    background: #edf8f0;
+    color: #17653a;
+    border-radius: 15px;
+    padding: 5px 9px;
+    font-size: 10px;
+    font-weight: 800;
+}
+
+/* SPECIAL DAY */
+
+.wbw-special-day {
+    border: 2px solid #168447;
+}
+
+.wbw-special-day .wbw-day-number {
+    background: #b27a12;
+}
+
+/* PROGRAMME NOTE */
+
+.wbw-programme-note {
+    margin-top: 22px;
+    background: #fffaf0;
+    border: 1px solid #eedeb9;
+    border-radius: 12px;
+    padding: 15px 18px;
+    color: #68582e;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* FINAL CTA */
+
+.wbw-programme-cta {
+    margin-top: 45px;
+    background: #173b2a;
+    color: #fff;
+    border-radius: 20px;
+    padding: 38px 25px;
+    text-align: center;
+}
+
+.wbw-programme-cta h3 {
+    color: #fff;
+    margin: 0 0 10px;
+    font-size: 26px;
+}
+
+.wbw-programme-cta p {
+    color: #dcefe3;
+    max-width: 780px;
+    margin: 0 auto 22px;
+    line-height: 1.7;
+}
+
+.wbw-programme-cta a {
+    display: inline-block;
+    background: #fff;
+    color: #155d32 !important;
+    padding: 12px 22px;
+    border-radius: 8px;
+    font-weight: 900;
+    text-decoration: none;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+    .wbw-day-nav {
+        grid-template-columns: repeat(4,1fr);
+    }
+
+}
+
+@media (max-width: 650px) {
+
+    .wbw-programme-section {
+        padding: 60px 0;
+    }
+
+    .wbw-day-nav {
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .wbw-day-header {
+        padding: 22px;
+    }
+
+    .wbw-day-header-top {
+        align-items: flex-start;
+    }
+
+    .wbw-day-number {
+        width: 60px;
+        height: 60px;
+        min-width: 60px;
+    }
+
+    .wbw-day-header h3 {
+        font-size: 20px;
+    }
+
+    .wbw-schedule-item {
+        grid-template-columns: 1fr;
+        gap: 8px;
+        padding: 18px;
+    }
+
+    .wbw-schedule-time {
+        font-size: 12px;
+    }
+
 }/* GLOBAL */
 
         .global {
@@ -1765,134 +2119,208 @@
 
     <!-- PROGRAMME -->
 
-    <section id="programme" class="programme">
+    <!-- ============================================================
+     WORLD BAMBOO WEEK 2026
+     12–18 SEPTEMBER 2026
+     SEVEN-DAY PROGRAMME
+     ============================================================ -->
 
-        <div class="container">
+<section id="programme" class="wbw-programme-section">
 
-            <div class="section-title">
+<div class="container">
 
-                <h2>
-                    Seven Days of Bamboo
-                </h2>
+    <!-- HERO -->
 
-                <p>
-                    12–18 September 2026
-                </p>
+    <div class="wbw-programme-hero">
+
+        <div class="wbw-programme-hero-content">
+
+            <div class="wbw-programme-date-badge">
+                🌿 12–18 SEPTEMBER 2026
+            </div>
+
+            <h2>
+                World Bamboo Week 2026
+            </h2>
+
+            <p>
+                Seven days of bamboo, science, innovation,
+                education, entrepreneurship, livelihoods,
+                culture, creativity and global collaboration.
+            </p>
+
+            <p>
+                🌏 Hybrid • Online + Offline • India & International
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- DAY NAVIGATION -->
+
+    <div class="wbw-day-nav">
+
+        <button class="active" onclick="showWBWDay('day12',this)">
+            <span>SEP</span>
+            12
+        </button>
+
+        <button onclick="showWBWDay('day13',this)">
+            <span>SEP</span>
+            13
+        </button>
+
+        <button onclick="showWBWDay('day14',this)">
+            <span>SEP</span>
+            14
+        </button>
+
+        <button onclick="showWBWDay('day15',this)">
+            <span>SEP</span>
+            15
+        </button>
+
+        <button onclick="showWBWDay('day16',this)">
+            <span>SEP</span>
+            16
+        </button>
+
+        <button onclick="showWBWDay('day17',this)">
+            <span>SEP</span>
+            17
+        </button>
+
+        <button onclick="showWBWDay('day18',this)">
+            <span>SEP</span>
+            18
+        </button>
+
+    </div>
+
+
+    <!-- ========================================================
+         12 SEPTEMBER
+         ======================================================== -->
+
+    <div id="day12" class="wbw-day-panel active">
+
+        <div class="wbw-day-header">
+
+            <div class="wbw-day-header-top">
+
+                <div class="wbw-day-number">
+                    <small>SEP</small>
+                    <strong>12</strong>
+                </div>
+
+                <div>
+                    <h3>
+                        National Opening & Bamboo India Day
+                    </h3>
+
+                    <p>
+                        Opening of World Bamboo Week 2026 and
+                        celebration of India's bamboo potential.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="wbw-day-badges">
+                <span class="wbw-day-badge">🇮🇳 Bamboo India</span>
+                <span class="wbw-day-badge">🎤 Opening</span>
+                <span class="wbw-day-badge">💻 Hybrid</span>
+                <span class="wbw-day-badge">🌏 International</span>
+            </div>
+
+        </div>
+
+
+        <div class="wbw-schedule">
+
+            <div class="wbw-schedule-item">
+
+                <div class="wbw-schedule-time">
+                    🌅 Morning
+                </div>
+
+                <div class="wbw-schedule-content">
+
+                    <h4>
+                        Inaugural Opening Ceremony
+                    </h4>
+
+                    <p>
+                        Formal opening of World Bamboo Week 2026,
+                        welcome address, introduction to the
+                        seven-day programme and participation
+                        opportunities.
+                    </p>
+
+                    <div class="wbw-schedule-tags">
+                        <span class="wbw-schedule-tag">Opening</span>
+                        <span class="wbw-schedule-tag">Hybrid</span>
+                    </div>
+
+                </div>
 
             </div>
 
 
-            <div class="programme-grid">
+            <div class="wbw-schedule-item">
 
-                <div class="day-card">
+                <div class="wbw-schedule-time">
+                    ☀️ Afternoon
+                </div>
 
-                    <small>12 SEPTEMBER</small>
+                <div class="wbw-schedule-content">
 
-                    <h3>
-                        Bamboo India
-                    </h3>
+                    <h4>
+                        Bamboo India: Potential, Opportunities & Future
+                    </h4>
 
                     <p>
-                        National launch, exhibition,
-                        BRTC introduction and outreach.
+                        Knowledge-sharing sessions highlighting
+                        India's bamboo resources, opportunities,
+                        applications, entrepreneurship and
+                        sustainable development.
                     </p>
+
+                    <div class="wbw-schedule-tags">
+                        <span class="wbw-schedule-tag">Experts</span>
+                        <span class="wbw-schedule-tag">Bamboo Economy</span>
+                        <span class="wbw-schedule-tag">India</span>
+                    </div>
 
                 </div>
 
+            </div>
 
-                <div class="day-card">
 
-                    <small>13 SEPTEMBER</small>
+            <div class="wbw-schedule-item">
 
-                    <h3>
-                        Students & Youth
-                    </h3>
-
-                    <p>
-                        Student challenge, quiz,
-                        creativity and innovation.
-                    </p>
-
+                <div class="wbw-schedule-time">
+                    🌆 Evening
                 </div>
 
+                <div class="wbw-schedule-content">
 
-                <div class="day-card">
-
-                    <small>14 SEPTEMBER</small>
-
-                    <h3>
-                        Entrepreneurship
-                    </h3>
+                    <h4>
+                        Bamboo Awareness & Public Engagement
+                    </h4>
 
                     <p>
-                        Bamboo business, startups,
-                        products and opportunities.
+                        Public outreach, digital campaign activities,
+                        bamboo awareness content and promotion of
+                        online competitions.
                     </p>
 
-                </div>
-
-
-                <div class="day-card">
-
-                    <small>15 SEPTEMBER</small>
-
-                    <h3>
-                        Science & Research
-                    </h3>
-
-                    <p>
-                        Research, technology,
-                        expert lectures and knowledge.
-                    </p>
-
-                </div>
-
-
-                <div class="day-card">
-
-                    <small>16 SEPTEMBER</small>
-
-                    <h3>
-                        Farmers & Public
-                    </h3>
-
-                    <p>
-                        Farmer outreach, bamboo adoption,
-                        awareness and livelihoods.
-                    </p>
-
-                </div>
-
-
-                <div class="day-card">
-
-                    <small>17 SEPTEMBER</small>
-
-                    <h3>
-                        Artisans & Industry
-                    </h3>
-
-                    <p>
-                        Craft, design, products,
-                        market linkage and industry.
-                    </p>
-
-                </div>
-
-
-                <div class="day-card special">
-
-                    <small>18 SEPTEMBER</small>
-
-                    <h3>
-                        WORLD BAMBOO DAY
-                    </h3>
-
-                    <p>
-                        Grand National & International
-                        Celebration, Global Bamboo Connect,
-                        awards and BRTC Bamboo Vision.
-                    </p>
+                    <div class="wbw-schedule-tags">
+                        <span class="wbw-schedule-tag">Public</span>
+                        <span class="wbw-schedule-tag">Social Media</span>
+                    </div>
 
                 </div>
 
@@ -1900,9 +2328,842 @@
 
         </div>
 
-    </section>
+    </div>
 
 
+    <!-- ========================================================
+         13 SEPTEMBER
+         ======================================================== -->
+
+    <div id="day13" class="wbw-day-panel">
+
+        <div class="wbw-day-header">
+
+            <div class="wbw-day-header-top">
+
+                <div class="wbw-day-number">
+                    <small>SEP</small>
+                    <strong>13</strong>
+                </div>
+
+                <div>
+                    <h3>
+                        Students, Youth & Education Day
+                    </h3>
+
+                    <p>
+                        Inspiring the next generation through
+                        bamboo education, skills and creativity.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="wbw-day-badges">
+                <span class="wbw-day-badge">🎓 Students</span>
+                <span class="wbw-day-badge">👨‍🎓 Youth</span>
+                <span class="wbw-day-badge">💻 Online</span>
+                <span class="wbw-day-badge">🏫 Education</span>
+            </div>
+
+        </div>
+
+
+        <div class="wbw-schedule">
+
+            <div class="wbw-schedule-item">
+
+                <div class="wbw-schedule-time">
+                    🌅 Morning
+                </div>
+
+                <div class="wbw-schedule-content">
+
+                    <h4>
+                        Bamboo Education & Career Opportunities
+                    </h4>
+
+                    <p>
+                        Awareness sessions on bamboo education,
+                        technical skills, career pathways and
+                        emerging opportunities for students.
+                    </p>
+
+                    <div class="wbw-schedule-tags">
+                        <span class="wbw-schedule-tag">Education</span>
+                        <span class="wbw-schedule-tag">Careers</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="wbw-schedule-item">
+
+                <div class="wbw-schedule-time">
+                    ☀️ Afternoon
+                </div>
+
+                <div class="wbw-schedule-content">
+
+                    <h4>
+                        Student & Youth Knowledge Sessions
+                    </h4>
+
+                    <p>
+                        Interactive sessions connecting young people
+                        with bamboo science, technology, design,
+                        entrepreneurship and sustainability.
+                    </p>
+
+                    <div class="wbw-schedule-tags">
+                        <span class="wbw-schedule-tag">Youth</span>
+                        <span class="wbw-schedule-tag">Innovation</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="wbw-schedule-item">
+
+                <div class="wbw-schedule-time">
+                    🌆 Evening
+                </div>
+
+                <div class="wbw-schedule-content">
+
+                    <h4>
+                        Student Creativity & Competition Showcase
+                    </h4>
+
+                    <p>
+                        Online promotion and showcase of student
+                        participation in the World Bamboo Week
+                        competitions.
+                    </p>
+
+                    <div class="wbw-schedule-tags">
+                        <span class="wbw-schedule-tag">Competitions</span>
+                        <span class="wbw-schedule-tag">Students</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================================================
+         14 SEPTEMBER
+         ======================================================== -->
+
+    <div id="day14" class="wbw-day-panel">
+
+        <div class="wbw-day-header">
+
+            <div class="wbw-day-header-top">
+
+                <div class="wbw-day-number">
+                    <small>SEP</small>
+                    <strong>14</strong>
+                </div>
+
+                <div>
+                    <h3>
+                        Bamboo Entrepreneurship & Startup Day
+                    </h3>
+
+                    <p>
+                        Connecting bamboo innovation with business,
+                        entrepreneurship, markets and investment.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="wbw-day-badges">
+                <span class="wbw-day-badge">🚀 Startups</span>
+                <span class="wbw-day-badge">💼 Business</span>
+                <span class="wbw-day-badge">💡 Innovation</span>
+                <span class="wbw-day-badge">🌏 Hybrid</span>
+            </div>
+
+        </div>
+
+
+        <div class="wbw-schedule">
+
+            <div class="wbw-schedule-item">
+
+                <div class="wbw-schedule-time">
+                    🌅 Morning
+                </div>
+
+                <div class="wbw-schedule-content">
+
+                    <h4>
+                        Bamboo Entrepreneurship Opportunities
+                    </h4>
+
+                    <p>
+                        Sessions on bamboo business opportunities,
+                        value addition, product development,
+                        enterprise creation and market potential.
+                    </p>
+
+                    <div class="wbw-schedule-tags">
+                        <span class="wbw-schedule-tag">Entrepreneurship</span>
+                        <span class="wbw-schedule-tag">Business</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="wbw-schedule-item">
+
+                <div class="wbw-schedule-time">
+                    ☀️ Afternoon
+                </div>
+
+                <div class="wbw-schedule-content">
+
+                    <h4>
+                        Bamboo Startup & Innovation Showcase
+                    </h4>
+
+                    <p>
+                        Showcase of innovative bamboo products,
+                        technologies, enterprises and ideas.
+                    </p>
+
+                    <div class="wbw-schedule-tags">
+                        <span class="wbw-schedule-tag">Startups</span>
+                        <span class="wbw-schedule-tag">Innovation</span>
+                        <span class="wbw-schedule-tag">Products</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="wbw-schedule-item">
+
+                <div class="wbw-schedule-time">
+                    🌆 Evening
+                </div>
+
+                <div class="wbw-schedule-content">
+
+                    <h4>
+                        Entrepreneur Interaction & Networking
+                    </h4>
+
+                    <p>
+                        Networking opportunities for entrepreneurs,
+                        innovators, institutions, buyers and
+                        bamboo ecosystem stakeholders.
+                    </p>
+
+                    <div class="wbw-schedule-tags">
+                        <span class="wbw-schedule-tag">Networking</span>
+                        <span class="wbw-schedule-tag">Industry</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================================================
+         15 SEPTEMBER
+         ======================================================== -->
+
+    <div id="day15" class="wbw-day-panel">
+
+        <div class="wbw-day-header">
+
+            <div class="wbw-day-header-top">
+
+                <div class="wbw-day-number">
+                    <small>SEP</small>
+                    <strong>15</strong>
+                </div>
+
+                <div>
+                    <h3>
+                        Science, Research & Technology Day
+                    </h3>
+
+                    <p>
+                        Exploring scientific research, technology,
+                        innovation and advanced applications of bamboo.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="wbw-day-badges">
+                <span class="wbw-day-badge">🔬 Research</span>
+                <span class="wbw-day-badge">🧪 Science</span>
+                <span class="wbw-day-badge">⚙️ Technology</span>
+                <span class="wbw-day-badge">🌏 International</span>
+            </div>
+
+        </div>
+
+
+        <div class="wbw-schedule">
+
+            <div class="wbw-schedule-item">
+
+                <div class="wbw-schedule-time">
+                    🌅 Morning
+                </div>
+
+                <div class="wbw-schedule-content">
+
+                    <h4>
+                        Bamboo Science & Research Sessions
+                    </h4>
+
+                    <p>
+                        Research-oriented discussions on bamboo
+                        biology, improvement, propagation,
+                        processing and sustainability.
+                    </p>
+
+                    <div class="wbw-schedule-tags">
+                        <span class="wbw-schedule-tag">Science</span>
+                        <span class="wbw-schedule-tag">Research</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="wbw-schedule-item">
+
+                <div class="wbw-schedule-time">
+                    ☀️ Afternoon
+                </div>
+
+                <div class="wbw-schedule-content">
+
+                    <h4>
+                        Advanced Bamboo Technology & Innovation
+                    </h4>
+
+                    <p>
+                        Knowledge-sharing on emerging technologies,
+                        tissue culture, value addition, engineering,
+                        construction and advanced bamboo products.
+                    </p>
+
+                    <div class="wbw-schedule-tags">
+                        <span class="wbw-schedule-tag">Technology</span>
+                        <span class="wbw-schedule-tag">Innovation</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="wbw-schedule-item">
+
+                <div class="wbw-schedule-time">
+                    🌆 Evening
+                </div>
+
+                <div class="wbw-schedule-content">
+
+                    <h4>
+                        Researcher & Expert Interaction
+                    </h4>
+
+                    <p>
+                        Interactive discussion and networking among
+                        researchers, scientists, educators and
+                        bamboo-sector professionals.
+                    </p>
+
+                    <div class="wbw-schedule-tags">
+                        <span class="wbw-schedule-tag">Experts</span>
+                        <span class="wbw-schedule-tag">Networking</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================================================
+         16 SEPTEMBER
+         ======================================================== -->
+
+    <div id="day16" class="wbw-day-panel">
+
+        <div class="wbw-day-header">
+
+            <div class="wbw-day-header-top">
+
+                <div class="wbw-day-number">
+                    <small>SEP</small>
+                    <strong>16</strong>
+                </div>
+
+                <div>
+                    <h3>
+                        Farmers, Livelihood & Green Economy Day
+                    </h3>
+
+                    <p>
+                        Highlighting bamboo cultivation, farmers,
+                        livelihoods, rural enterprise and the
+                        green economy.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="wbw-day-badges">
+                <span class="wbw-day-badge">🌱 Farmers</span>
+                <span class="wbw-day-badge">👨‍🌾 Livelihoods</span>
+                <span class="wbw-day-badge">🌿 Green Economy</span>
+                <span class="wbw-day-badge">💻 Hybrid</span>
+            </div>
+
+        </div>
+
+
+        <div class="wbw-schedule">
+
+            <div class="wbw-schedule-item">
+
+                <div class="wbw-schedule-time">
+                    🌅 Morning
+                </div>
+
+                <div class="wbw-schedule-content">
+
+                    <h4>
+                        Bamboo Cultivation & Farmer Opportunities
+                    </h4>
+
+                    <p>
+                        Knowledge-sharing on bamboo cultivation,
+                        management, planting material, productivity
+                        and farmer opportunities.
+                    </p>
+
+                    <div class="wbw-schedule-tags">
+                        <span class="wbw-schedule-tag">Farmers</span>
+                        <span class="wbw-schedule-tag">Cultivation</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="wbw-schedule-item">
+
+                <div class="wbw-schedule-time">
+                    ☀️ Afternoon
+                </div>
+
+                <div class="wbw-schedule-content">
+
+                    <h4>
+                        Bamboo Livelihoods & Rural Development
+                    </h4>
+
+                    <p>
+                        Discussions on bamboo-based livelihoods,
+                        women and community participation,
+                        value addition and rural economic opportunities.
+                    </p>
+
+                    <div class="wbw-schedule-tags">
+                        <span class="wbw-schedule-tag">Livelihood</span>
+                        <span class="wbw-schedule-tag">SHGs</span>
+                        <span class="wbw-schedule-tag">Rural Economy</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="wbw-schedule-item">
+
+                <div class="wbw-schedule-time">
+                    🌆 Evening
+                </div>
+
+                <div class="wbw-schedule-content">
+
+                    <h4>
+                        Bamboo & Green Economy Dialogue
+                    </h4>
+
+                    <p>
+                        Discussion on how bamboo can contribute to
+                        sustainable production, climate resilience
+                        and a circular green economy.
+                    </p>
+
+                    <div class="wbw-schedule-tags">
+                        <span class="wbw-schedule-tag">Climate</span>
+                        <span class="wbw-schedule-tag">Green Economy</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================================================
+         17 SEPTEMBER
+         ======================================================== -->
+
+    <div id="day17" class="wbw-day-panel">
+
+        <div class="wbw-day-header">
+
+            <div class="wbw-day-header-top">
+
+                <div class="wbw-day-number">
+                    <small>SEP</small>
+                    <strong>17</strong>
+                </div>
+
+                <div>
+                    <h3>
+                        Artisans, Design, Industry & Market Day
+                    </h3>
+
+                    <p>
+                        Celebrating bamboo craftsmanship, design,
+                        products, industry, market opportunities
+                        and creative applications.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="wbw-day-badges">
+                <span class="wbw-day-badge">🎨 Artisans</span>
+                <span class="wbw-day-badge">🏗️ Design</span>
+                <span class="wbw-day-badge">🏭 Industry</span>
+                <span class="wbw-day-badge">🛍️ Market</span>
+            </div>
+
+        </div>
+
+
+        <div class="wbw-schedule">
+
+            <div class="wbw-schedule-item">
+
+                <div class="wbw-schedule-time">
+                    🌅 Morning
+                </div>
+
+                <div class="wbw-schedule-content">
+
+                    <h4>
+                        Bamboo Artisans & Traditional Knowledge
+                    </h4>
+
+                    <p>
+                        Highlighting artisan skills, traditional
+                        bamboo crafts, cultural practices and
+                        knowledge transfer.
+                    </p>
+
+                    <div class="wbw-schedule-tags">
+                        <span class="wbw-schedule-tag">Artisans</span>
+                        <span class="wbw-schedule-tag">Culture</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="wbw-schedule-item">
+
+                <div class="wbw-schedule-time">
+                    ☀️ Afternoon
+                </div>
+
+                <div class="wbw-schedule-content">
+
+                    <h4>
+                        Bamboo Design, Products & Industry
+                    </h4>
+
+                    <p>
+                        Exploring contemporary bamboo design,
+                        product development, manufacturing,
+                        architecture and industrial applications.
+                    </p>
+
+                    <div class="wbw-schedule-tags">
+                        <span class="wbw-schedule-tag">Design</span>
+                        <span class="wbw-schedule-tag">Products</span>
+                        <span class="wbw-schedule-tag">Industry</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="wbw-schedule-item">
+
+                <div class="wbw-schedule-time">
+                    🌆 Evening
+                </div>
+
+                <div class="wbw-schedule-content">
+
+                    <h4>
+                        Bamboo Market & Networking Session
+                    </h4>
+
+                    <p>
+                        Connecting artisans, designers, producers,
+                        entrepreneurs, buyers and bamboo-sector
+                        stakeholders.
+                    </p>
+
+                    <div class="wbw-schedule-tags">
+                        <span class="wbw-schedule-tag">Market</span>
+                        <span class="wbw-schedule-tag">Networking</span>
+                        <span class="wbw-schedule-tag">B2B</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- ========================================================
+         18 SEPTEMBER
+         WORLD BAMBOO DAY
+         ======================================================== -->
+
+    <div id="day18" class="wbw-day-panel">
+
+        <div class="wbw-day-header wbw-special-day">
+
+            <div class="wbw-day-header-top">
+
+                <div class="wbw-day-number">
+                    <small>SEP</small>
+                    <strong>18</strong>
+                </div>
+
+                <div>
+
+                    <h3>
+                        🌏 WORLD BAMBOO DAY — GRAND CELEBRATION
+                    </h3>
+
+                    <p>
+                        The flagship celebration concluding
+                        World Bamboo Week 2026 at BRTC, Chichpalli,
+                        with online and offline participation.
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div class="wbw-day-badges">
+                <span class="wbw-day-badge">🌏 World Bamboo Day</span>
+                <span class="wbw-day-badge">🎉 Grand Celebration</span>
+                <span class="wbw-day-badge">🏆 Awards</span>
+                <span class="wbw-day-badge">💻 Hybrid</span>
+            </div>
+
+        </div>
+
+
+        <div class="wbw-schedule">
+
+            <div class="wbw-schedule-item">
+
+                <div class="wbw-schedule-time">
+                    🌅 Morning
+                </div>
+
+                <div class="wbw-schedule-content">
+
+                    <h4>
+                        World Bamboo Day Grand Opening
+                    </h4>
+
+                    <p>
+                        Flagship World Bamboo Day celebration,
+                        welcome of guests and participants,
+                        bamboo awareness and institutional
+                        participation.
+                    </p>
+
+                    <div class="wbw-schedule-tags">
+                        <span class="wbw-schedule-tag">Grand Event</span>
+                        <span class="wbw-schedule-tag">BRTC</span>
+                        <span class="wbw-schedule-tag">Hybrid</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="wbw-schedule-item">
+
+                <div class="wbw-schedule-time">
+                    ☀️ Afternoon
+                </div>
+
+                <div class="wbw-schedule-content">
+
+                    <h4>
+                        Expert Sessions, Showcase & Exhibition
+                    </h4>
+
+                    <p>
+                        Featured knowledge sessions, bamboo
+                        innovation showcase, displays and
+                        celebration activities.
+                    </p>
+
+                    <div class="wbw-schedule-tags">
+                        <span class="wbw-schedule-tag">Experts</span>
+                        <span class="wbw-schedule-tag">Exhibition</span>
+                        <span class="wbw-schedule-tag">Innovation</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="wbw-schedule-item">
+
+                <div class="wbw-schedule-time">
+                    🌆 Evening
+                </div>
+
+                <div class="wbw-schedule-content">
+
+                    <h4>
+                        🏆 Competition Recognition & Closing Ceremony
+                    </h4>
+
+                    <p>
+                        Recognition of selected competition
+                        participants and winners, certificates,
+                        bamboo goodies/awards as applicable,
+                        acknowledgements and closing of
+                        World Bamboo Week 2026.
+                    </p>
+
+                    <div class="wbw-schedule-tags">
+                        <span class="wbw-schedule-tag">Awards</span>
+                        <span class="wbw-schedule-tag">Certificates</span>
+                        <span class="wbw-schedule-tag">Bamboo Goodies</span>
+                        <span class="wbw-schedule-tag">Closing</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="wbw-programme-note">
+
+            <strong>🌿 World Bamboo Day:</strong>
+            18 September is the flagship celebration day of
+            World Bamboo Week 2026. Online and physical
+            participation opportunities will be communicated
+            through the official event channels.
+
+        </div>
+
+    </div>
+
+
+    <!-- PROGRAMME NOTE -->
+
+    <div class="wbw-programme-note">
+
+        <strong>📌 Programme Note:</strong>
+        The programme is designed as a working event framework.
+        Exact session timings, speakers, session links, venues
+        and activity details should be updated on the website
+        as they are officially confirmed by the organisers.
+
+    </div>
+
+
+    <!-- FINAL CTA -->
+
+    <div class="wbw-programme-cta">
+
+        <h3>
+            🌿 Be Part of World Bamboo Week 2026
+        </h3>
+
+        <p>
+            Join the seven-day celebration from
+            <strong>12–18 September 2026</strong>.
+            Participate online, attend activities at BRTC,
+            share bamboo stories and celebrate the future
+            of green gold.
+        </p>
+
+        <a href="#competitions">
+            🏆 JOIN ONLINE COMPETITIONS
+        </a>
+
+    </div>
+
+</div>
+
+</section>
     <!-- =========================================================
      ONLINE BAMBOO COMPETITIONS
      WORLD BAMBOO WEEK 2026
@@ -5255,6 +6516,65 @@ function toggleWBWGuideline(id, button) {
 
         }, 100);
     }
+}
+</script><script>
+/* ============================================================
+   WORLD BAMBOO WEEK 2026
+   PROGRAMME DAY SWITCHER
+   ============================================================ */
+
+function showWBWDay(dayId, button) {
+
+    /* Hide every programme day */
+
+    document.querySelectorAll(".wbw-day-panel").forEach(function(panel) {
+        panel.classList.remove("active");
+    });
+
+    /* Remove active state from every day button */
+
+    document.querySelectorAll(".wbw-day-nav button").forEach(function(btn) {
+        btn.classList.remove("active");
+    });
+
+    /* Show selected day */
+
+    const selectedDay = document.getElementById(dayId);
+
+    if (selectedDay) {
+        selectedDay.classList.add("active");
+    }
+
+    /* Highlight selected button */
+
+    if (button) {
+        button.classList.add("active");
+    }
+
+    /* Keep the programme header visible on mobile */
+
+    const programme = document.getElementById("programme");
+
+    if (programme) {
+
+        const nav = programme.querySelector(".wbw-day-nav");
+
+        if (nav) {
+
+            const navTop =
+                nav.getBoundingClientRect().top +
+                window.pageYOffset -
+                90;
+
+            window.scrollTo({
+                top: navTop,
+                behavior: "smooth"
+            });
+
+        }
+
+    }
+
 }
 </script></body>
 </html>
