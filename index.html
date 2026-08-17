@@ -337,7 +337,139 @@
             font-size: 14px;
         }
 
-        /* GLOBAL */
+        /* ONLINE COMPETITIONS - WORLD BAMBOO WEEK 2026 */
+
+.competition-section {
+    background: #f7fbf7;
+}
+
+.competition-banner {
+    background: linear-gradient(135deg, #0f5c32, #168447);
+    color: white;
+    padding: 35px 25px;
+    border-radius: 18px;
+    text-align: center;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.10);
+}
+
+.competition-banner h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.competition-banner p {
+    max-width: 850px;
+    margin: 8px auto;
+    color: #e8f6ec;
+}
+
+.competition-deadline {
+    display: inline-block;
+    background: #ffffff;
+    color: #155d32;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.competition-grid {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 22px;
+}
+
+.competition {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.07);
+    border-top: 4px solid #168447;
+    display: flex;
+    flex-direction: column;
+}
+
+.competition-number {
+    font-size: 13px;
+    font-weight: bold;
+    color: #168447;
+    margin-bottom: 5px;
+}
+
+.competition h3 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #173b2a;
+}
+
+.competition p {
+    color: #68766e;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+.competition-meta {
+    font-size: 13px;
+    color: #526158;
+    margin-bottom: 18px;
+}
+
+.competition-meta strong {
+    color: #155d32;
+}
+
+.competition-button {
+    display: inline-block;
+    margin-top: auto;
+    background: #168447;
+    color: white !important;
+    text-align: center;
+    padding: 11px 16px;
+    border-radius: 7px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.competition-button:hover {
+    background: #0f5c32;
+    transform: translateY(-2px);
+}
+
+.certificate-box {
+    background: #fff;
+    border: 2px solid #d7eadb;
+    border-radius: 15px;
+    padding: 25px;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.certificate-box h3 {
+    color: #155d32;
+    margin-bottom: 8px;
+}
+
+.certificate-box p {
+    color: #66756c;
+    margin-bottom: 5px;
+}
+
+@media (max-width: 900px) {
+    .competition-grid {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .competition-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .competition-banner h3 {
+        font-size: 23px;
+    }
+}/* GLOBAL */
 
         .global {
             background: #123d27;
@@ -845,98 +977,417 @@
 
     <!-- COMPETITIONS -->
 
-    <section id="competitions">
+    <!-- COMPETITIONS -->
 
-        <div class="container">
+<section id="competitions" class="competition-section">
 
-            <div class="section-title">
+    <div class="container">
 
-                <h2>
-                    National Bamboo Competitions
-                </h2>
+        <div class="section-title">
 
-                <p>
-                    Participate, create and showcase your
-                    bamboo ideas with India and the world.
-                </p>
+            <h2>
+                🏆 Online Bamboo Competitions
+            </h2>
 
-            </div>
+            <p>
+                Open now for India and international participants
+            </p>
+
+        </div>
 
 
-            <div class="competition-grid">
+        <div class="competition-banner">
 
-                <div class="competition">
-                    <h3>📸 Photography</h3>
-                    <p>
-                        Bamboo, nature, people,
-                        products and innovation.
-                    </p>
-                </div>
+            <h3>
+                🌿 WORLD BAMBOO WEEK 2026 – ONLINE COMPETITIONS ARE OPEN!
+            </h3>
 
-                <div class="competition">
-                    <h3>🎬 Short Film</h3>
-                    <p>
-                        Bamboo stories, documentaries,
-                        research and communities.
-                    </p>
-                </div>
+            <p>
+                Participate from anywhere in India or around the world.
+                Create, compete, showcase your talent and celebrate bamboo.
+            </p>
 
-                <div class="competition">
-                    <h3>📱 Reel Challenge</h3>
-                    <p>
-                        Create powerful short-form
-                        bamboo content.
-                    </p>
-                </div>
+            <p>
+                <strong>
+                    Online entries are open NOW.
+                </strong>
+            </p>
 
-                <div class="competition">
-                    <h3>🧠 Bamboo Quiz</h3>
-                    <p>
-                        National online bamboo
-                        knowledge challenge.
-                    </p>
-                </div>
-
-                <div class="competition">
-                    <h3>💡 Innovation</h3>
-                    <p>
-                        Ideas, prototypes and
-                        bamboo technologies.
-                    </p>
-                </div>
-
-                <div class="competition">
-                    <h3>✍️ Essay</h3>
-                    <p>
-                        Bamboo, climate, livelihood
-                        and sustainable development.
-                    </p>
-                </div>
-
-                <div class="competition">
-                    <h3>🎨 Painting</h3>
-                    <p>
-                        Art inspired by bamboo,
-                        nature and the future.
-                    </p>
-                </div>
-
-                <div class="competition">
-                    <h3>🎤 Debate</h3>
-                    <p>
-                        Youth debate on bamboo,
-                        sustainability and development.
-                    </p>
-                </div>
-
+            <div class="competition-deadline">
+                🔴 FINAL ONLINE SUBMISSION DEADLINE:
+                11 SEPTEMBER 2026
             </div>
 
         </div>
 
-    </section>
+
+        <div class="competition-grid">
 
 
-    <!-- GLOBAL -->
+            <!-- 01 -->
+
+            <div class="competition">
+
+                <div class="competition-number">
+                    COMPETITION 01
+                </div>
+
+                <h3>
+                    📸 Bamboo Photography Contest
+                </h3>
+
+                <p>
+                    Capture the beauty, diversity, uses, people,
+                    products, landscapes and innovations associated
+                    with bamboo.
+                </p>
+
+                <div class="competition-meta">
+                    <strong>Mode:</strong> Online<br>
+                    <strong>Deadline:</strong> 11 September 2026
+                </div>
+
+                <a class="competition-button"
+                   href="https://docs.google.com/forms/d/e/1FAIpQLSdefWppKLHNS3-Lg-l9dgiAy4QvrkrMPtZ99oZme4kpzRljdw/viewform"
+                   target="_blank"
+                   rel="noopener">
+                    PARTICIPATE NOW →
+                </a>
+
+            </div>
+
+
+            <!-- 02 -->
+
+            <div class="competition">
+
+                <div class="competition-number">
+                    COMPETITION 02
+                </div>
+
+                <h3>
+                    🎬 Videography & Short Film Competition
+                </h3>
+
+                <p>
+                    Present inspiring bamboo stories through
+                    documentary, short film, awareness,
+                    technology or livelihood-based videos.
+                </p>
+
+                <div class="competition-meta">
+                    <strong>Mode:</strong> Online<br>
+                    <strong>Deadline:</strong> 11 September 2026
+                </div>
+
+                <a class="competition-button"
+                   href="https://docs.google.com/forms/d/e/1FAIpQLSd3--vOxF3xMSu1TpwNYRS8VaabBq3ck3u95EVlxPsZqwvcOA/viewform"
+                   target="_blank"
+                   rel="noopener">
+                    SUBMIT VIDEO →
+                </a>
+
+            </div>
+
+
+            <!-- 03 -->
+
+            <div class="competition">
+
+                <div class="competition-number">
+                    COMPETITION 03
+                </div>
+
+                <h3>
+                    📱 Bamboo Reel Challenge
+                </h3>
+
+                <p>
+                    Create an engaging short-form bamboo reel
+                    that inspires people to discover bamboo
+                    and its possibilities.
+                </p>
+
+                <div class="competition-meta">
+                    <strong>Mode:</strong> Online<br>
+                    <strong>Deadline:</strong> 11 September 2026
+                </div>
+
+                <a class="competition-button"
+                   href="https://docs.google.com/forms/d/e/1FAIpQLSfH6A6HHarqAr17BwTnHFu67RBY0i5rNzqUIXzy3jJzbrDPDg/viewform"
+                   target="_blank"
+                   rel="noopener">
+                    SUBMIT REEL →
+                </a>
+
+            </div>
+
+
+            <!-- 04 -->
+
+            <div class="competition">
+
+                <div class="competition-number">
+                    COMPETITION 04
+                </div>
+
+                <h3>
+                    🧠 National & International Bamboo Quiz
+                </h3>
+
+                <p>
+                    Test your knowledge of bamboo science,
+                    species, culture, technology, environment,
+                    products and global bamboo development.
+                </p>
+
+                <div class="competition-meta">
+                    <strong>Mode:</strong> Online<br>
+                    <strong>Deadline:</strong> 11 September 2026
+                </div>
+
+                <a class="competition-button"
+                   href="https://docs.google.com/forms/d/e/1FAIpQLSe8_YfSFqdwLF44CM5UT_3Se6Jf2-qPbBskrZQbxDE_maj2lA/viewform"
+                   target="_blank"
+                   rel="noopener">
+                    TAKE THE QUIZ →
+                </a>
+
+            </div>
+
+
+            <!-- 05 -->
+
+            <div class="competition">
+
+                <div class="competition-number">
+                    COMPETITION 05
+                </div>
+
+                <h3>
+                    🧩 Bamboo Crossword Challenge
+                </h3>
+
+                <p>
+                    Solve the bamboo-themed crossword and
+                    challenge your knowledge while discovering
+                    interesting facts about bamboo.
+                </p>
+
+                <div class="competition-meta">
+                    <strong>Mode:</strong> Online<br>
+                    <strong>Deadline:</strong> 11 September 2026
+                </div>
+
+                <a class="competition-button"
+                   href="https://docs.google.com/forms/d/e/1FAIpQLSefnqJSZiWFSoDGamSGhfmMiP2zN-RNCkfx8sqIZ76kc7R2iQ/viewform"
+                   target="_blank"
+                   rel="noopener">
+                    PARTICIPATE NOW →
+                </a>
+
+            </div>
+
+
+            <!-- 06 -->
+
+            <div class="competition">
+
+                <div class="competition-number">
+                    COMPETITION 06
+                </div>
+
+                <h3>
+                    🤳 Selfie with Green Gold
+                </h3>
+
+                <p>
+                    Celebrate bamboo by sharing your creative
+                    selfie with bamboo, bamboo products,
+                    plantations, structures or bamboo activities.
+                </p>
+
+                <div class="competition-meta">
+                    <strong>Mode:</strong> Online<br>
+                    <strong>Deadline:</strong> 11 September 2026
+                </div>
+
+                <a class="competition-button"
+                   href="https://docs.google.com/forms/d/e/1FAIpQLSf76FM6VZYGKAHRj2a-V-G0CR3MO8UXFzAwDJjq5VdRr-3blQ/viewform"
+                   target="_blank"
+                   rel="noopener">
+                    SUBMIT SELFIE →
+                </a>
+
+            </div>
+
+
+            <!-- 07 -->
+
+            <div class="competition">
+
+                <div class="competition-number">
+                    COMPETITION 07
+                </div>
+
+                <h3>
+                    🎨 Bamboo Sketch & Painting Competition
+                </h3>
+
+                <p>
+                    Express your creativity through artwork
+                    inspired by bamboo, nature, sustainability,
+                    culture, technology or the future.
+                </p>
+
+                <div class="competition-meta">
+                    <strong>Mode:</strong> Online<br>
+                    <strong>Deadline:</strong> 11 September 2026
+                </div>
+
+                <a class="competition-button"
+                   href="https://docs.google.com/forms/d/e/1FAIpQLSd-O6jpyMQD4biTPpQnoO6a0lgJ_SVC2rcsiHQkhxQi5H9p5A/viewform"
+                   target="_blank"
+                   rel="noopener">
+                    SUBMIT ARTWORK →
+                </a>
+
+            </div>
+
+
+            <!-- 08 -->
+
+            <div class="competition">
+
+                <div class="competition-number">
+                    COMPETITION 08
+                </div>
+
+                <h3>
+                    ✍️ Bamboo Slogan Competition
+                </h3>
+
+                <p>
+                    Create a powerful, original and memorable
+                    slogan that communicates the importance
+                    and future potential of bamboo.
+                </p>
+
+                <div class="competition-meta">
+                    <strong>Mode:</strong> Online<br>
+                    <strong>Deadline:</strong> 11 September 2026
+                </div>
+
+                <a class="competition-button"
+                   href="https://docs.google.com/forms/d/e/1FAIpQLScvfD_A3GF9MWq5uN2XHqjLd03fD6uVodtaNYbkv2ElPYkJ9g/viewform"
+                   target="_blank"
+                   rel="noopener">
+                    SUBMIT SLOGAN →
+                </a>
+
+            </div>
+
+
+            <!-- 09 -->
+
+            <div class="competition">
+
+                <div class="competition-number">
+                    COMPETITION 09
+                </div>
+
+                <h3>
+                    📝 Bamboo Essay Competition
+                </h3>
+
+                <p>
+                    Share your ideas and perspectives on bamboo,
+                    climate resilience, sustainability, livelihoods,
+                    technology and the future of bamboo.
+                </p>
+
+                <div class="competition-meta">
+                    <strong>Mode:</strong> Online<br>
+                    <strong>Deadline:</strong> 11 September 2026
+                </div>
+
+                <a class="competition-button"
+                   href="https://docs.google.com/forms/d/e/1FAIpQLSeRIoNy0MhHd-LitPY8xS_HqhOqBuPGDgzdiDMWsqFMY8Q6Ag/viewform"
+                   target="_blank"
+                   rel="noopener">
+                    SUBMIT ESSAY →
+                </a>
+
+            </div>
+
+
+            <!-- 10 -->
+
+            <div class="competition">
+
+                <div class="competition-number">
+                    COMPETITION 10
+                </div>
+
+                <h3>
+                    🎤 Online Bamboo Debate Competition
+                </h3>
+
+                <p>
+                    Present your arguments, ideas and perspectives
+                    on bamboo, sustainability, development,
+                    environment, technology and society.
+                </p>
+
+                <div class="competition-meta">
+                    <strong>Mode:</strong> Online<br>
+                    <strong>Deadline:</strong> 11 September 2026
+                </div>
+
+                <a class="competition-button"
+                   href="https://docs.google.com/forms/d/e/1FAIpQLSdzYoZgDPFcfSKY7ruGBdVNGDOH5Ygzu4fZk6hZrpyE9EH47Q/viewform"
+                   target="_blank"
+                   rel="noopener">
+                    PARTICIPATE NOW →
+                </a>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- CERTIFICATES & RECOGNITION -->
+
+        <div class="certificate-box">
+
+            <h3>
+                🏆 Certificates + Bamboo Goodies + Recognition
+            </h3>
+
+            <p>
+                Eligible participants will receive a
+                <strong>Digital Certificate of Participation</strong>,
+                subject to the respective competition rules.
+            </p>
+
+            <p>
+                🥇 Selected winners will receive
+                <strong>Winner Certificates, exciting bamboo goodies
+                and special recognition during World Bamboo Week 2026.</strong>
+            </p>
+
+            <p>
+                🌿 Celebrate bamboo. Showcase your talent.
+                Get recognised on a national and international platform.
+            </p>
+
+        </div>
+
+
+    </div>
+
+</section><!-- GLOBAL -->
 
     <section id="global" class="global">
 
