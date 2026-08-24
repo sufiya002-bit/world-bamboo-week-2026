@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#0b5d34">
 <title>World Bamboo Week 2026 | BRTC Chichpalli</title>
-<meta name="description" content="World Bamboo Week 2026 — a national and international hybrid programme hosted by Bamboo Research & Training Centre, Chichpalli, Government of Maharashtra Forest Department, 12–18 September 2026.">
-<meta name="keywords" content="World Bamboo Week 2026, Bamboo, BRTC Chichpalli, World Bamboo Day, Bamboo Research, Bamboo Technology, Bamboo Livelihoods, Maharashtra">
+<meta name="description" content="World Bamboo Week 2026 — 14–18 September 2026 at Bamboo Research & Training Centre (BRTC), Chichpalli. Bamboo for the Future – From Tradition to Innovation. Theme: Sustainable Development, Green Jobs, and Climate Action.">
+<meta name="keywords" content="World Bamboo Week 2026, World Bamboo Day, BRTC Chichpalli, Bamboo for the Future, Sustainable Development, Green Jobs, Climate Action, Bamboo Research, Bamboo Technology, Maharashtra Forest Department">
 <style>
 :root{
   --green:#0b5d34;--green2:#11804a;--green3:#0a3e25;--mint:#edf8f0;
@@ -207,6 +207,53 @@ footer li{margin:7px 0}
  .reward-grid{grid-template-columns:1fr}.detail-row{grid-template-columns:1fr;gap:1px}
  .footer-grid{gap:24px}.nav-wrap{min-height:64px}.nav-links{top:64px}
 }
+
+/* Main-page institutional identity */
+.identity-strip{background:#fff;border-bottom:1px solid var(--line);padding:16px 0}
+.identity-wrap{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px}
+.identity-side{display:flex;align-items:center;gap:14px;min-width:0}
+.identity-side.left{justify-content:flex-start}
+.identity-side.right{justify-content:flex-end}
+.identity-side img{object-fit:contain;display:block}
+.identity-brtc{width:68px;height:68px;border-radius:50%}
+.identity-gov{width:235px;height:70px}
+.identity-event{width:88px;height:88px;border-radius:50%}
+.identity-title{text-align:center;color:var(--green);font-size:12px;font-weight:900;letter-spacing:.7px;line-height:1.35}
+.identity-title span{display:block;color:var(--muted);font-size:10px;font-weight:700;letter-spacing:.3px;margin-top:2px}
+.hero-main{display:grid;grid-template-columns:1.05fr .95fr;gap:38px;align-items:center;text-align:left}
+.hero-copy{text-align:left}
+.hero-copy p{margin-left:0;margin-right:0}
+.hero-copy .hero-actions{justify-content:flex-start}
+.hero-copy .hero-logo{display:none}
+.hero-photo{position:relative;min-height:390px;border-radius:24px;overflow:hidden;border:1px solid rgba(255,255,255,.25);box-shadow:0 22px 55px rgba(0,0,0,.24)}
+.hero-photo img{width:100%;height:390px;object-fit:cover;display:block}
+.hero-photo-caption{position:absolute;left:18px;right:18px;bottom:18px;background:rgba(3,45,24,.82);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.18);border-radius:13px;padding:12px 15px;color:#fff;font-size:12px;font-weight:800}
+@media(max-width:900px){
+  .identity-wrap{grid-template-columns:1fr 1fr;gap:14px}
+  .identity-center{grid-column:1 / -1;grid-row:1;text-align:center}
+  .identity-side.left{grid-column:1;grid-row:2;justify-content:flex-start}
+  .identity-side.right{grid-column:2;grid-row:2;justify-content:flex-end}
+  .identity-gov{width:190px;height:58px}
+  .identity-brtc{width:58px;height:58px}
+  .identity-event{width:74px;height:74px}
+  .hero-main{grid-template-columns:1fr;text-align:center}
+  .hero-copy{text-align:center}
+  .hero-copy .hero-actions{justify-content:center}
+  .hero-photo{min-height:280px}
+  .hero-photo img{height:280px}
+}
+@media(max-width:560px){
+  .identity-wrap{display:flex;flex-wrap:wrap;justify-content:center}
+  .identity-center{order:0;width:100%}
+  .identity-side.left,.identity-side.right{order:1;flex:1;justify-content:center}
+  .identity-gov{width:150px;height:48px}
+  .identity-brtc{width:52px;height:52px}
+  .identity-event{width:68px;height:68px}
+  .identity-title{font-size:10px}
+  .hero-photo{min-height:230px}
+  .hero-photo img{height:230px}
+}
+
 </style>
 </head>
 <body>
@@ -228,87 +275,124 @@ footer li{margin:7px 0}
   </div>
 </nav>
 
+
+<section class="identity-strip" aria-label="Official event and host identities">
+  <div class="container identity-wrap">
+    <div class="identity-side left">
+      <img class="identity-brtc" src="images/brtc-logo.png" alt="Bamboo Research & Training Centre (BRTC) logo">
+      <div class="identity-title">BAMBOO RESEARCH &amp; TRAINING CENTRE<br>CHICHPALLI<span>Government of Maharashtra</span></div>
+    </div>
+    <div class="identity-center">
+      <img class="identity-event" src="images/world-bamboo-week-logo.png" alt="World Bamboo Week 2026 logo">
+    </div>
+    <div class="identity-side right">
+      <div class="identity-title">MAHARASHTRA FOREST DEPARTMENT<br><span>Government of Maharashtra</span></div>
+      <img class="identity-gov" src="images/govt-logos.png" alt="Government of Maharashtra and Forest Department logos">
+    </div>
+  </div>
+</section>
+
 <header class="hero" id="home">
   <div class="hero-content">
-    <img class="hero-logo" src="images/brtc-logo.png" alt="Bamboo Research & Training Centre">
-    <div class="badge">NATIONAL & INTERNATIONAL HYBRID PROGRAMME</div>
-    <h1>WORLD BAMBOO WEEK 2026</h1>
-    <h2>BAMBOO FOR THE FUTURE</h2>
-    <p>Celebrating bamboo science, technology, innovation, livelihoods, culture, education and sustainable development.</p>
-    <p class="hero-date">12–18 SEPTEMBER 2026</p>
-    <p>Bamboo Research & Training Centre (BRTC), Chichpalli, Maharashtra, India</p>
-    <div class="hero-actions">
-      <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSe5ZvddrXdSgBCa4qywcTg5I2g9nv15AUtVllk9m-9J4IBU2w/viewform" target="_blank" rel="noopener">REGISTER / PARTICIPATE</a>
-      <a class="btn btn-outline" href="#programme">EXPLORE PROGRAMME</a>
-      <a class="btn btn-outline" href="#competitions">VIEW COMPETITIONS</a>
+    <div class="hero-main">
+      <div class="hero-copy">
+        <div class="badge">NATIONAL &amp; INTERNATIONAL HYBRID PROGRAMME</div>
+        <h1>WORLD BAMBOO WEEK 2026</h1>
+        <h2>BAMBOO FOR THE FUTURE – FROM TRADITION TO INNOVATION</h2>
+        <p>Celebrating bamboo through sustainable development, green jobs, climate action, science, technology, livelihoods, culture and innovation.</p>
+        <p class="hero-date">14–18 SEPTEMBER 2026</p>
+        <p>Bamboo Research &amp; Training Centre (BRTC), Chichpalli, Maharashtra, India</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="https://docs.google.com/forms/d/e/1FAIpQLSe5ZvddrXdSgBCa4qywcTg5I2g9nv15AUtVllk9m-9J4IBU2w/viewform" target="_blank" rel="noopener">REGISTER / PARTICIPATE</a>
+          <a class="btn btn-outline" href="#programme">EXPLORE PROGRAMME</a>
+          <a class="btn btn-outline" href="#competitions">VIEW COMPETITIONS</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="images/brtc-entrance.png" alt="Bamboo Research & Training Centre, Chichpalli entrance">
+        <div class="hero-photo-caption">Bamboo Research &amp; Training Centre (BRTC), Chichpalli · Host Institution</div>
+      </div>
     </div>
   </div>
 </header>
 
 <section class="stats"><div class="container stat-grid">
-  <div class="stat"><strong>12–18 Sep</strong><span>Seven-Day Programme</span></div>
+  <div class="stat"><strong>14–18 Sep</strong><span>Official Public Programme</span></div>
   <div class="stat"><strong>18 Sep</strong><span>World Bamboo Day Flagship</span></div>
   <div class="stat"><strong>10</strong><span>Bamboo Competitions</span></div>
-  <div class="stat"><strong></strong><span></span></div>
+  <div class="stat"><strong>12–13 Sep</strong><span>Pre-Event Production Days</span></div>
 </div></section>
 
 <section id="about"><div class="container">
-  <div class="section-head"><div class="eyebrow">About the Week</div><h2>One Week. One Bamboo Vision.</h2><p>A high-visibility hybrid platform designed to connect knowledge with people and bamboo with opportunity.</p></div>
+  <div class="section-head"><div class="eyebrow">World Bamboo Week 2026</div><h2>Bamboo for the Future – From Tradition to Innovation</h2><p>Theme: <strong>Sustainable Development, Green Jobs, and Climate Action</strong></p></div>
   <div class="about-grid">
-    <div class="feature"><h3>Bamboo for the Future</h3>
-      <p>World Bamboo Week 2026 is proposed as a seven-day national and international platform hosted by BRTC, Chichpalli. It brings together science, research, technology, education, livelihoods, entrepreneurship, culture, industry and public participation.</p>
-      <ul><li>National and international knowledge exchange</li><li>Research, laboratory, nursery and technology showcase</li><li>Farmer, artisan, youth, student and entrepreneur engagement</li><li>Digital and on-site competitions</li><li>Exhibitions, demonstrations, workshops and BRTC Bamboo Trail</li><li>World Bamboo Day flagship celebration on 18 September</li></ul>
+    <div class="feature"><h3>A five-day public programme with global reach</h3>
+      <p>World Bamboo Week 2026 is the official public programme from 14–18 September 2026 at BRTC, Chichpalli, with campus and online participation. The flagship World Bamboo Day celebration is on 18 September.</p>
+      <ul>
+        <li>Promote bamboo as a sustainable, versatile and future-oriented resource</li>
+        <li>Showcase BRTC research, laboratories, nursery, bambusetum, training, academic and bamboo-technology capabilities</li>
+        <li>Create opportunities for students, youth, farmers, SHGs, artisans, researchers, designers, entrepreneurs, industry and institutions</li>
+        <li>Launch continuing knowledge and digital initiatives of BRTC</li>
+        <li>Connect India with international bamboo institutions, researchers and practitioners</li>
+        <li>Create a lasting bamboo legacy through adoption, student innovation and knowledge exchange</li>
+      </ul>
     </div>
     <div class="objectives">
-      <div class="objective"><strong>Awareness</strong><span>Promote bamboo as a sustainable, versatile and future-oriented resource.</span></div>
-      <div class="objective"><strong>Science & Technology</strong><span>Share bamboo research, propagation, processing, construction and product innovation.</span></div>
-      <div class="objective"><strong>Livelihoods</strong><span>Create opportunities for farmers, artisans, SHGs, entrepreneurs and rural communities.</span></div>
-      <div class="objective"><strong>Youth & Education</strong><span>Engage students, teachers, creators and institutions through learning and competitions.</span></div>
-      <div class="objective"><strong>Global Visibility</strong><span>Expand BRTC's digital and institutional visibility across India and international bamboo networks.</span></div>
-      <div class="objective"><strong>Partnerships</strong><span>Build responsible collaboration with industry, CSR, research and knowledge partners.</span></div>
+      <div class="objective"><strong>School & College Students</strong><span>Competitions, webinars, awareness, volunteering, adoption and exhibitions.</span></div>
+      <div class="objective"><strong>AICTE Diploma in Bamboo Technology</strong><span>Bamboo Ganpati, innovation showcase, newsletter, MiniStoreShop and volunteering.</span></div>
+      <div class="objective"><strong>Farmers & Growers</strong><span>Cultivation, nursery, harvesting, treatment, value addition, markets and adoption.</span></div>
+      <div class="objective"><strong>Women SHGs & Artisans</strong><span>Products, packaging, branding, craft demonstrations and market interaction.</span></div>
+      <div class="objective"><strong>Researchers & Technical Experts</strong><span>Global Showcase, expert webinars, research exchange and networking.</span></div>
+      <div class="objective"><strong>Industry & Entrepreneurs</strong><span>Business, technology, products, investment, market linkage and partnerships.</span></div>
     </div>
   </div>
 </div></section>
 
 <section class="programme" id="programme"><div class="container">
-  <div class="section-head"><div class="eyebrow">12–18 September 2026</div><h2>Seven Days of Bamboo</h2><p>The detailed session timings, speakers and venue allocations will be published after authorised confirmation.</p></div>
+  <div class="section-head"><div class="eyebrow">Official Public Programme</div><h2>14–18 September 2026</h2><p><strong>Pre-event production: 12–13 September 2026</strong> · Campus + Online Participation · Flagship: World Bamboo Day, 18 September 2026</p></div>
   <div class="programme-grid">
-    <div class="day"><small>12 SEPTEMBER</small><h3>Bamboo India</h3><p>National launch, awareness, exhibition, BRTC introduction and outreach.</p></div>
-    <div class="day"><small>13 SEPTEMBER</small><h3>Students & Youth</h3><p>Student engagement, creativity, learning, knowledge challenges and innovation.</p></div>
-    <div class="day"><small>14 SEPTEMBER</small><h3>Entrepreneurship</h3><p>Bamboo business, startups, products, markets, enterprise and opportunities.</p></div>
-    <div class="day"><small>15 SEPTEMBER</small><h3>Science & Research</h3><p>Research, laboratories, technology, expert knowledge and innovation showcase.</p></div>
-    <div class="day"><small>16 SEPTEMBER</small><h3>Farmers & Public</h3><p>Cultivation, planting material, adoption, awareness, livelihoods and outreach.</p></div>
-    <div class="day"><small>17 SEPTEMBER</small><h3>Artisans & Industry</h3><p>Craft, design, products, processing, construction, market linkage and industry.</p></div>
-    <div class="day special"><small>18 SEPTEMBER</small><h3>WORLD BAMBOO DAY</h3><p>Flagship national & international celebration, recognition, awards and BRTC Bamboo Vision.</p></div>
-    <div class="day"><small>POST-EVENT</small><h3>Impact & Legacy</h3><p>Results, certificates, media archive, partner acknowledgement, reporting and follow-up.</p></div>
+    <div class="day"><small>12 SEPTEMBER</small><h3>PRE-EVENT PRODUCTION</h3><p>Exhibition, stage/AV, Bamboo Ganpati installation preparation, MiniStoreShop, adoption dispatch preparation, technical testing, media preparation and volunteer training.</p></div>
+    <div class="day"><small>13 SEPTEMBER</small><h3>FULL REHEARSAL & READINESS</h3><p>Inauguration, guest/protocol and cultural rehearsals, documentation briefing, safety inspection, construction-demo safety check and final cleaning.</p></div>
+    <div class="day"><small>14 SEPTEMBER · MONDAY</small><h3>BAMBOO GANESHOTSAV & INAUGURATION</h3><p>Bamboo Ganpati Sthapana, official inauguration, student innovation, exhibition, cultural programme, MiniStoreShop preview and #BambooWeek Digital Pledge launch.</p></div>
+    <div class="day"><small>15 SEPTEMBER · TUESDAY</small><h3>BAMBOO SCIENCE, RESEARCH & TECHNOLOGY</h3><p>School competitions, research sessions, Bamboo Around the World – Global Showcase, Expert Webinar Series launch, student newsletter launch and technology showcase.</p></div>
+    <div class="day"><small>16 SEPTEMBER · WEDNESDAY</small><h3>BAMBOO FARMERS, LIVELIHOOD & GREEN ECONOMY</h3><p>Farmers conference, Bamboo-to-Income demonstration, SHG enterprise session, entrepreneurship, Adopt a Bamboo Plant campaign and MiniStoreShop operational launch.</p></div>
+    <div class="day"><small>17 SEPTEMBER · THURSDAY</small><h3>BAMBOO ART, DESIGN, EXHIBITION, INDUSTRY & MARKET</h3><p>School creative competitions, craft, construction demonstration, skill workshop, exhibition stalls, industry interaction and market networking.</p></div>
+    <div class="day special"><small>18 SEPTEMBER · FRIDAY</small><h3>WORLD BAMBOO DAY – GRAND FINALE</h3><p>Grand keynote, bamboo exhibition, competition showcase, Bamboo Ganpati presentation, expert panel, adoption recognition, awards, special recognition and closing.</p></div>
+    <div class="day"><small>LEGACY</small><h3>CONTINUING BRTC INITIATIVES</h3><p>Bamboo Expert Webinar Series, Digital Pledge dashboard, Adopt a Bamboo Plant, student newsletter and BRTC MiniStoreShop continue beyond the event.</p></div>
   </div>
 </div></section>
 
 <section><div class="container">
-  <div class="section-head"><div class="eyebrow">Programme Components</div><h2>Online Knowledge + On-Site Experience</h2><p>World Bamboo Week combines digital reach with direct engagement at BRTC.</p></div>
+  <div class="section-head"><div class="eyebrow">Programme Initiatives</div><h2>From Campus Experiences to Global Digital Participation</h2><p>Major activities and legacy initiatives in the final implementation plan.</p></div>
   <div class="activity-grid">
-    <div class="activity-panel"><h3>🌏 Online Activities</h3><ul class="activity-list">
-      <li><strong>01. Bamboo Expert Webinar Series</strong> — national and international expert talks on science, technology, cultivation and industry.</li>
-      <li><strong>02. Bamboo Farmers' Digital Training</strong> — species selection, plantation, harvesting, treatment and markets.</li>
-      <li><strong>03. Bamboo Success Story Series</strong> — farmers, artisans, entrepreneurs, designers and innovators.</li>
-      <li><strong>04. Bamboo Around the World – Global Showcase</strong> — bamboo practices and knowledge from different countries.</li>
-      <li><strong>05. #BambooWeek Digital Pledge Campaign</strong> — public sustainability action and bamboo pledge.</li>
+    <div class="activity-panel"><h3>🌏 Online & Digital Programme</h3><ul class="activity-list">
+      <li><strong>Bamboo Expert Webinar Series</strong> — formal launch on 15 September; continuing BRTC series with national/international experts.</li>
+      <li><strong>Bamboo Farmers’ Digital Training</strong> — species selection, plantation, harvesting, treatment, value addition and markets.</li>
+      <li><strong>Bamboo Success Story Series</strong> — farmers, artisans, entrepreneurs, designers, students and innovators.</li>
+      <li><strong>Bamboo Around the World – Global Showcase</strong> — hybrid international showcase on 15 September.</li>
+      <li><strong>#BambooWeek Digital Pledge</strong> — India + international individual/institutional participation and impact tracking.</li>
+      <li><strong>Adopt a Bamboo Plant – Online</strong> — online adoption registration, certificate and plant-batch dispatch to registered addresses.</li>
+      <li><strong>Daily Digital Recap</strong> — photos, short videos, interviews and next-day information.</li>
+      <li><strong>Diploma in Bamboo Technology Students’ Newsletter</strong> — student-led academic communication platform.</li>
     </ul></div>
-    <div class="activity-panel"><h3>🏛️ On-Site Activities at BRTC</h3><ul class="activity-list">
-      <li><strong>06. Bamboo Technology Exhibition</strong> — products, technologies, research outputs and prototypes.</li>
-      <li><strong>07. Live Bamboo Craft Demonstration</strong> — traditional processing and craft techniques.</li>
-      <li><strong>08. Bamboo Construction Demonstration</strong> — joints, treatment, structural elements and assembly.</li>
-      <li><strong>09. Bamboo Food & Culinary Experience</strong> — appropriate bamboo food applications with hygiene controls.</li>
-      <li><strong>10. Bamboo Skill Workshop</strong> — participants make a simple bamboo product.</li>
-      <li><strong>11. Bamboo Innovation Walk / BRTC Bamboo Trail</strong> — nursery, species, laboratories, products, research and technologies.</li>
-      <li><strong>12. Adopt a Bamboo Plant</strong> — dedicated awareness/adoption spots and participant records.</li>
+    <div class="activity-panel"><h3>🏛️ Campus Experiences at BRTC</h3><ul class="activity-list">
+      <li><strong>Bamboo Technology Exhibition</strong> — research outputs, prototypes, products, applications and technologies.</li>
+      <li><strong>Live Bamboo Craft Demonstration</strong> — traditional processing, splitting, weaving and craft techniques.</li>
+      <li><strong>Bamboo Construction Demonstration</strong> — joints, treatment, structural members and assembly under controlled safety conditions.</li>
+      <li><strong>Bamboo Skill Workshop</strong> — hands-on simple bamboo product making.</li>
+      <li><strong>BRTC Bamboo Innovation Walk / Trail</strong> — nursery, species, bambusetum, laboratories, products, research and technologies.</li>
+      <li><strong>Bamboo Ganpati Showcase</strong> — student design, fabrication, process and documentation.</li>
+      <li><strong>Bamboo Food & Culinary Experience</strong> — appropriate bamboo-based food applications subject to hygiene/approval.</li>
+      <li><strong>Adopt a Bamboo Plant</strong> — campus, institutional and online adoption with certificate + plant batch.</li>
+      <li><strong>BRTC MiniStoreShop</strong> — approved bamboo products, student innovations, publications and selected partner products.</li>
+      <li><strong>Student Newsletter Corner</strong> — Diploma in Bamboo Technology student editorial and innovation showcase.</li>
     </ul></div>
   </div>
 </div></section>
 
 <section class="competitions" id="competitions"><div class="container">
-  <div class="section-head"><div class="eyebrow">Participate & Compete</div><h2>🏆 Bamboo Competitions 2026</h2><p>Ten competitions covering photography, film, reels, knowledge, art, writing and speaking.</p></div>
-  <div class="comp-banner"><h3>🌿 Create. Compete. Celebrate Bamboo.</h3><p>Online competitions are open for participation from India and internationally. On-site competitions are conducted at BRTC, Chichpalli according to the approved school-level framework.</p><div class="deadline">ONLINE SUBMISSION DEADLINE: 11 SEPTEMBER 2026</div></div>
+  <div class="section-head"><div class="eyebrow">Participate & Compete</div><h2>🏆 Bamboo Competitions 2026</h2><p>Ten competitions covering photography, film, reels, knowledge, art, writing and speaking, with online entries closing 11 September and on-site competitions conducted at BRTC.</p></div>
+  <div class="comp-banner"><h3>🌿 Create. Compete. Celebrate Bamboo.</h3><p>Online competitions welcome eligible participants from India and internationally. On-site competitions are conducted at BRTC, Chichpalli according to the approved school-level framework.</p><div class="deadline">ONLINE SUBMISSION DEADLINE: 11 SEPTEMBER 2026</div></div>
   <div class="comp-note"><strong>Important:</strong> The latest detailed competition table lists the individual modes shown below. Certificates, prizes and bamboo goodies are subject to eligibility, verification, availability and applicable arrangements.</div>
   <div class="comp-filters"><button class="filter active" data-filter="all">All 10</button><button class="filter" data-filter="online">Online</button><button class="filter" data-filter="offline">On-site</button></div>
 
@@ -344,7 +428,7 @@ footer li{margin:7px 0}
     <article class="comp" data-mode="offline"><div class="comp-img"><img src="images/world-bamboo-day.png" alt="Bamboo Quiz"><span class="comp-no">04</span><span class="mode">ON-SITE</span></div><div class="comp-body">
       <div class="comp-title"><span class="icon">🧠</span><h3>Bamboo Quiz</h3></div><p class="comp-desc">A school-level knowledge challenge covering bamboo species, ecology, cultivation, culture, products and technology.</p>
       <div class="tags"><span class="tag">Classes 8–10</span><span class="tag">Team of 3</span><span class="tag">On-site</span></div>
-      <div class="detail"><div class="detail-row"><strong>Eligibility</strong><span>Participants from school classes 8, 9 and 10.</span></div><div class="detail-row"><strong>Group</strong><span>Team of 3; maximum 2 teams per institution.</span></div><div class="detail-row"><strong>Mode</strong><span>Offline at BRTC, Chichpalli.</span></div><div class="detail-row"><strong>Prize</strong><span>₹9,000 / ₹6,000 / ₹3,000</span></div></div>
+      <div class="detail"><div class="detail-row"><strong>Eligibility</strong><span>Classes 8–10.</span></div><div class="detail-row"><strong>Group</strong><span>Team of 3; maximum 2 teams per institution.</span></div><div class="detail-row"><strong>Mode</strong><span>Offline at BRTC, Chichpalli.</span></div><div class="detail-row"><strong>Prize</strong><span>₹9,000 / ₹6,000 / ₹3,000</span></div></div>
       <div class="prize">🎓 Certificates and 🏆 winner recognition; bamboo goodies subject to eligibility, availability and approved arrangements.</div>
       <div class="comp-actions"><button class="guide-btn" onclick="toggleGuide('g04',this)">📋 GUIDELINES</button><a class="submit-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSe8_YfSFqdwLF44CM5UT_3Se6Jf2-qPbBskrZQbxDE_maj2lA/viewform" target="_blank" rel="noopener">REGISTRATION →</a></div>
       <div class="guidelines" id="g04"><h4>Knowledge Areas</h4><ul><li>Bamboo species and botany</li><li>Ecology and environment</li><li>Cultivation and propagation</li><li>Products and processing</li><li>Architecture and technology</li><li>Culture and history</li><li>Economy and sustainability</li></ul><h4>Result Control</h4><ul><li>Final score is based on correct answers.</li><li>Completion time may be used as a tie-breaker where applicable.</li><li>Official result sheets will be verified and archived.</li></ul></div>
@@ -353,7 +437,7 @@ footer li{margin:7px 0}
     <article class="comp" data-mode="offline"><div class="comp-img"><img src="images/bambusetum.png" alt="Bamboo Crossword Challenge"><span class="comp-no">05</span><span class="mode">ON-SITE</span></div><div class="comp-body">
       <div class="comp-title"><span class="icon">🧩</span><h3>Bamboo Crossword Challenge</h3></div><p class="comp-desc">Solve a bamboo-themed crossword and explore interesting facts about bamboo science, products, culture and technology.</p>
       <div class="tags"><span class="tag">Classes 8–10</span><span class="tag">Individual / Team of 2</span><span class="tag">On-site</span></div>
-      <div class="detail"><div class="detail-row"><strong>Eligibility</strong><span>Participants from school classes 8, 9 and 10.</span></div><div class="detail-row"><strong>Group</strong><span>Individual or team of 2.</span></div><div class="detail-row"><strong>Mode</strong><span>Offline at BRTC, Chichpalli.</span></div><div class="detail-row"><strong>Prize</strong><span>₹9,000 / ₹6,000 / ₹3,000</span></div></div>
+      <div class="detail"><div class="detail-row"><strong>Eligibility</strong><span>Classes 8–10.</span></div><div class="detail-row"><strong>Group</strong><span>Individual or team of 2.</span></div><div class="detail-row"><strong>Mode</strong><span>Offline at BRTC, Chichpalli.</span></div><div class="detail-row"><strong>Prize</strong><span>₹9,000 / ₹6,000 / ₹3,000</span></div></div>
       <div class="prize">🎓 Certificates for eligible participants and 🏆 winner recognition; bamboo goodies subject to approved arrangements.</div>
       <div class="comp-actions"><button class="guide-btn" onclick="toggleGuide('g05',this)">📋 GUIDELINES</button><a class="submit-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSefnqJSZiWFSoDGamSGhfmMiP2zN-RNCkfx8sqIZ76kc7R2iQ/viewform" target="_blank" rel="noopener">REGISTRATION →</a></div>
       <div class="guidelines" id="g05"><h4>Rules</h4><ul><li>Complete the official bamboo crossword at the authorised venue.</li><li>Only eligible and valid participants will be considered.</li><li>Copied, fraudulent or manipulated submissions may be rejected.</li></ul><h4>Judging Criteria</h4><table class="criteria"><tr><th>Criterion</th><th>Weight</th></tr><tr><td>Correct answers</td><td>80</td></tr><tr><td>Completion/time, where applicable</td><td>20</td></tr></table></div>
@@ -371,7 +455,7 @@ footer li{margin:7px 0}
     <article class="comp" data-mode="offline"><div class="comp-img"><img src="images/bamboo-construction.png" alt="Bamboo Sketch and Painting Competition"><span class="comp-no">07</span><span class="mode">ON-SITE</span></div><div class="comp-body">
       <div class="comp-title"><span class="icon">🎨</span><h3>Bamboo Sketch & Painting Competition</h3></div><p class="comp-desc">Express creativity through artwork inspired by bamboo, nature, sustainability, culture, technology and the future.</p>
       <div class="tags"><span class="tag">Classes 8–10</span><span class="tag">Individual</span><span class="tag">Art</span></div>
-      <div class="detail"><div class="detail-row"><strong>Eligibility</strong><span>Participants from school classes 8, 9 and 10.</span></div><div class="detail-row"><strong>Group</strong><span>Individual.</span></div><div class="detail-row"><strong>Mode</strong><span>Offline at BRTC, Chichpalli.</span></div><div class="detail-row"><strong>Prize</strong><span>₹3,000 / ₹2,000 / ₹1,000</span></div></div>
+      <div class="detail"><div class="detail-row"><strong>Eligibility</strong><span>Classes 8–10.</span></div><div class="detail-row"><strong>Group</strong><span>Individual.</span></div><div class="detail-row"><strong>Mode</strong><span>Offline at BRTC, Chichpalli.</span></div><div class="detail-row"><strong>Prize</strong><span>₹3,000 / ₹2,000 / ₹1,000</span></div></div>
       <div class="prize">🎨 Certificates, winner recognition and exciting bamboo goodies subject to approved arrangements.</div>
       <div class="comp-actions"><button class="guide-btn" onclick="toggleGuide('g07',this)">📋 GUIDELINES</button><a class="submit-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSd-O6jpyMQD4biTPpQnoO6a0lgJ_SVC2rcsiHQkhxQi5H9p5A/viewform" target="_blank" rel="noopener">REGISTRATION →</a></div>
       <div class="guidelines" id="g07"><h4>Suggested Themes</h4><ul><li>Bamboo and Nature</li><li>Bamboo and Climate Action</li><li>Sustainable Living</li><li>Bamboo Culture and Tradition</li><li>Future Cities and Bamboo</li><li>Bamboo Innovation</li></ul><h4>Judging Criteria — 100 Marks</h4><table class="criteria"><tr><th>Criterion</th><th>Marks</th></tr><tr><td>Creativity</td><td>25</td></tr><tr><td>Theme relevance</td><td>20</td></tr><tr><td>Artistic skill</td><td>20</td></tr><tr><td>Originality</td><td>15</td></tr><tr><td>Composition</td><td>10</td></tr><tr><td>Message/impact</td><td>10</td></tr></table></div>
@@ -380,7 +464,7 @@ footer li{margin:7px 0}
     <article class="comp" data-mode="offline"><div class="comp-img"><img src="images/world-bamboo-week-2026.png" alt="Bamboo Slogan Competition"><span class="comp-no">08</span><span class="mode">ON-SITE</span></div><div class="comp-body">
       <div class="comp-title"><span class="icon">✍️</span><h3>Bamboo Slogan Competition</h3></div><p class="comp-desc">Create a powerful, original and memorable slogan communicating the importance and future potential of bamboo.</p>
       <div class="tags"><span class="tag">Classes 8–10</span><span class="tag">Individual</span><span class="tag">Writing</span></div>
-      <div class="detail"><div class="detail-row"><strong>Eligibility</strong><span>Participants from school classes 8, 9 and 10.</span></div><div class="detail-row"><strong>Group</strong><span>Individual.</span></div><div class="detail-row"><strong>Mode</strong><span>Offline at BRTC, Chichpalli.</span></div><div class="detail-row"><strong>Prize</strong><span>₹3,000 / ₹2,000 / ₹1,000</span></div></div>
+      <div class="detail"><div class="detail-row"><strong>Eligibility</strong><span>Classes 8–10.</span></div><div class="detail-row"><strong>Group</strong><span>Individual.</span></div><div class="detail-row"><strong>Mode</strong><span>Offline at BRTC, Chichpalli.</span></div><div class="detail-row"><strong>Prize</strong><span>₹3,000 / ₹2,000 / ₹1,000</span></div></div>
       <div class="prize">✍️ Selected slogans receive certificate, recognition and exciting bamboo goodies subject to approved arrangements.</div>
       <div class="comp-actions"><button class="guide-btn" onclick="toggleGuide('g08',this)">📋 GUIDELINES</button><a class="submit-btn" href="https://docs.google.com/forms/d/e/1FAIpQLScvfD_A3GF9MWq5uN2XHqjLd03fD6uVodtaNYbkv2ElPYkJ9g/viewform" target="_blank" rel="noopener">REGISTRATION →</a></div>
       <div class="guidelines" id="g08"><h4>Guidelines</h4><ul><li>Slogan must be original and clearly related to bamboo, sustainability or the future.</li><li>Keep it concise, memorable and suitable for public communication.</li><li>Offensive, copied or misleading content may be rejected.</li></ul><h4>Indicative Judging Criteria — 100 Marks</h4><table class="criteria"><tr><th>Criterion</th><th>Marks</th></tr><tr><td>Relevance to bamboo/theme</td><td>30</td></tr><tr><td>Originality</td><td>25</td></tr><tr><td>Clarity & memorability</td><td>20</td></tr><tr><td>Creativity</td><td>15</td></tr><tr><td>Overall impact</td><td>10</td></tr></table></div>
@@ -389,7 +473,7 @@ footer li{margin:7px 0}
     <article class="comp" data-mode="offline"><div class="comp-img"><img src="images/world-bamboo-week-2026.png" alt="Bamboo Essay Competition"><span class="comp-no">09</span><span class="mode">ON-SITE</span></div><div class="comp-body">
       <div class="comp-title"><span class="icon">📝</span><h3>Bamboo Essay Competition</h3></div><p class="comp-desc">Share ideas and perspectives on bamboo, climate resilience, sustainability, livelihoods, technology and the future.</p>
       <div class="tags"><span class="tag">Classes 8–10</span><span class="tag">Individual</span><span class="tag">Essay</span></div>
-      <div class="detail"><div class="detail-row"><strong>Eligibility</strong><span>Participants from school classes 8, 9 and 10.</span></div><div class="detail-row"><strong>Group</strong><span>Individual.</span></div><div class="detail-row"><strong>Mode</strong><span>Offline at BRTC, Chichpalli.</span></div><div class="detail-row"><strong>Prize</strong><span>₹3,000 / ₹2,000 / ₹1,000</span></div></div>
+      <div class="detail"><div class="detail-row"><strong>Eligibility</strong><span>Classes 8–10.</span></div><div class="detail-row"><strong>Group</strong><span>Individual.</span></div><div class="detail-row"><strong>Mode</strong><span>Offline at BRTC, Chichpalli.</span></div><div class="detail-row"><strong>Prize</strong><span>₹3,000 / ₹2,000 / ₹1,000</span></div></div>
       <div class="prize">📜 Eligible participants may receive participation recognition; winners receive certificate, recognition and bamboo goodies subject to approved arrangements.</div>
       <div class="comp-actions"><button class="guide-btn" onclick="toggleGuide('g09',this)">📋 GUIDELINES</button><a class="submit-btn" href="https://docs.google.com/forms/d/e/1FAIpQLSeRIoNy0MhHd-LitPY8xS_HqhOqBuPGDgzdiDMWsqFMY8Q6Ag/viewform" target="_blank" rel="noopener">REGISTRATION →</a></div>
       <div class="guidelines" id="g09"><h4>Suggested Themes</h4><ul><li>Bamboo and sustainable development</li><li>Bamboo and climate resilience</li><li>Bamboo livelihoods and rural development</li><li>Bamboo science and technology</li><li>Bamboo and future cities</li></ul><h4>Indicative Judging Criteria — 100 Marks</h4><table class="criteria"><tr><th>Criterion</th><th>Marks</th></tr><tr><td>Content & relevance</td><td>30</td></tr><tr><td>Originality of ideas</td><td>20</td></tr><tr><td>Structure & coherence</td><td>20</td></tr><tr><td>Language & expression</td><td>15</td></tr><tr><td>Creativity</td><td>10</td></tr><tr><td>Overall impact</td><td>5</td></tr></table></div>
@@ -398,7 +482,7 @@ footer li{margin:7px 0}
     <article class="comp" data-mode="offline"><div class="comp-img"><img src="images/world-bamboo-day.png" alt="Bamboo Elocution Competition"><span class="comp-no">10</span><span class="mode">ON-SITE</span></div><div class="comp-body">
       <div class="comp-title"><span class="icon">🎤</span><h3>Bamboo Elocution Competition</h3></div><p class="comp-desc">Present a clear, confident and engaging speech on bamboo, sustainability, livelihoods, science, culture or the future.</p>
       <div class="tags"><span class="tag">Classes 8–10</span><span class="tag">Individual</span><span class="tag">Speaking</span></div>
-      <div class="detail"><div class="detail-row"><strong>Eligibility</strong><span>Participants from school classes 8, 9 and 10.</span></div><div class="detail-row"><strong>Group</strong><span>Individual.</span></div><div class="detail-row"><strong>Mode</strong><span>Offline at BRTC, Chichpalli.</span></div><div class="detail-row"><strong>Prize</strong><span>₹3,000 / ₹2,000 / ₹1,000</span></div></div>
+      <div class="detail"><div class="detail-row"><strong>Eligibility</strong><span>Classes 8–10.</span></div><div class="detail-row"><strong>Group</strong><span>Individual.</span></div><div class="detail-row"><strong>Mode</strong><span>Offline at BRTC, Chichpalli.</span></div><div class="detail-row"><strong>Prize</strong><span>₹3,000 / ₹2,000 / ₹1,000</span></div></div>
       <div class="prize">🎤 Certificates, winner recognition and exciting bamboo goodies subject to approved arrangements.</div>
       <div class="comp-actions"><button class="guide-btn" onclick="toggleGuide('g10',this)">📋 GUIDELINES</button><a class="submit-btn" href="#contact" onclick="alert('The latest approved framework lists this as an on-site Elocution Competition. The previously created Google Form was a Debate form and should not be used for Elocution unless officially repurposed and verified.');return false;">DETAILS / REGISTRATION →</a></div>
       <div class="guidelines" id="g10"><h4>Important Form Status</h4><ul><li>The latest framework changes Competition 10 to <strong>Bamboo Elocution Competition</strong>.</li><li>The previously supplied Google Form was created for <strong>Online Bamboo Debate Competition</strong>. It should not be advertised as the Elocution form unless it is deliberately repurposed and verified.</li><li>Final registration instructions, speaking time and venue details should be published after authorised confirmation.</li></ul><h4>Indicative Judging Criteria — 100 Marks</h4><table class="criteria"><tr><th>Criterion</th><th>Marks</th></tr><tr><td>Content & bamboo relevance</td><td>25</td></tr><tr><td>Knowledge & accuracy</td><td>20</td></tr><tr><td>Delivery & confidence</td><td>20</td></tr><tr><td>Language & expression</td><td>15</td></tr><tr><td>Originality</td><td>10</td></tr><tr><td>Overall impact</td><td>10</td></tr></table></div>
@@ -426,14 +510,38 @@ footer li{margin:7px 0}
   </tbody></table></div>
 </div></section>
 
+<section id="adopt" style="background:#fff"><div class="container">
+  <div class="section-head"><div class="eyebrow">Legacy Campaign</div><h2>🌱 Adopt a Bamboo Plant</h2><p>A national and online campaign connecting Forest Departments, institutions, schools, universities, organisations and individuals with bamboo adoption.</p></div>
+  <div class="about-grid">
+    <div class="feature"><h3>Adopt. Plant. Nurture. Recognise.</h3><p>Adoption may be undertaken at designated institutional, campus or BRTC locations, or through the online route with approved plant-batch dispatch to registered addresses.</p><ul><li>Unique Adoption ID for every registered adoption</li><li>Adoption certificate after registration/verification according to approved policy</li><li>Bamboo plant/batch dispatch through the approved logistics mechanism</li><li>Basic planting and care instructions with dispatched batches</li><li>National/state/institution-wise adoption dashboard</li><li>Approved digital recognition through the event channels</li></ul></div>
+    <div class="objectives">
+      <div class="objective"><strong>Forest Departments & Government Offices</strong><span>Official invitation → adoption registration → plant/batch allocation → dispatch/planting record.</span></div>
+      <div class="objective"><strong>Schools / Colleges / Universities</strong><span>Adoption point or campus plant with nominated coordinator and maintenance record.</span></div>
+      <div class="objective"><strong>Companies / NGOs / SHGs</strong><span>Online registration, adoption location, planting evidence and recognition.</span></div>
+      <div class="objective"><strong>Individual Online Adoption</strong><span>Online form, registered address, bamboo plant batch, adoption certificate and acknowledgement.</span></div>
+      <div class="objective"><strong>BRTC Campus Adoption</strong><span>Tagged and recorded plants at designated BRTC locations.</span></div>
+      <div class="objective"><strong>Legacy</strong><span>A continuing campaign that extends beyond World Bamboo Week.</span></div>
+    </div>
+  </div>
+</div></section>
+
 <section class="global" id="global"><div class="container">
   <div class="section-head"><div class="eyebrow" style="color:#a9dfba">Global Bamboo Connect</div><h2>🌏 India to the World</h2><p>Creating responsible opportunities for international bamboo knowledge exchange, expert participation and institutional networking.</p></div>
   <div class="global-grid"><div class="global-card"><h3>Global Participation</h3><p>International participation may include experts, researchers, designers, institutions and bamboo stakeholders through online knowledge exchange, global showcase activities and approved invitations.</p></div><div class="global-card"><h3>Knowledge Exchange</h3><ul><li>Expert webinars and messages</li><li>Bamboo practices from different countries</li><li>Research and technology networking</li><li>Global bamboo innovation showcase</li><li>India–international institutional connections</li></ul></div></div>
 </div></section>
 
+<section style="background:#fff" id="launches"><div class="container">
+  <div class="section-head"><div class="eyebrow">New BRTC Initiatives</div><h2>Three Launches with a Continuing Legacy</h2><p>World Bamboo Week 2026 is also the platform for launching initiatives that continue beyond the five-day programme.</p></div>
+  <div class="cards">
+    <div class="card"><div class="card-icon">🎥</div><h3>Bamboo Expert Webinar Series</h3><p>Launched on 15 September as a continuing BRTC national/international knowledge programme covering science, propagation, tissue culture, genetics, treatment, testing, construction, products, markets, livelihoods and sustainability.</p></div>
+    <div class="card"><div class="card-icon">📰</div><h3>Diploma in Bamboo Technology Students’ Newsletter</h3><p>Student-led academic communication under faculty guidance, covering projects, bamboo science, campus activities, interviews, field visits, innovation, design, products and student achievements.</p></div>
+    <div class="card"><div class="card-icon">🛍️</div><h3>BRTC MiniStoreShop</h3><p>A campus showcase and retail point for approved bamboo handicrafts, utility products, décor, student products, publications, approved BRTC merchandise and selected partner products.</p></div>
+  </div>
+</div></section>
+
 <section class="brtc" id="brtc"><div class="container">
-  <div class="section-head"><div class="eyebrow">Host Institution</div><h2>Discover BRTC Chichpalli</h2><p>Bamboo Research & Training Centre — research, training, technology, education, nursery, propagation and innovation.</p></div>
-  <div class="brtc-grid">
+  <div class="section-head"><div class="eyebrow">Host Institution</div><h2>Discover BRTC Chichpalli</h2><p>Bamboo Research & Training Centre — research, training, technology, education, nursery, bambusetum, propagation, innovation and bamboo enterprise.</p></div>
+  <div class="brtc-grid"><div class="brtc-card"><h3>🪷 Bamboo Ganpati</h3><p>AICTE Diploma in Bamboo Technology student design and fabrication project, presented during the inauguration and documented as a major student innovation showcase.</p></div>
     <div class="brtc-card"><h3>🔬 Research</h3><p>Bamboo science, applied research and technology development.</p></div>
     <div class="brtc-card"><h3>🧬 Tissue Culture</h3><p>Advanced bamboo propagation and planting-material research.</p></div>
     <div class="brtc-card"><h3>🌱 Nursery</h3><p>Bamboo planting material, nursery development and species resources.</p></div>
@@ -466,20 +574,20 @@ footer li{margin:7px 0}
 </div></section>
 
 <section class="sponsor" id="sponsorship"><div class="container">
-  <div class="section-head"><div class="eyebrow">Partner With Us</div><h2>🌱 Support the Bamboo Future</h2><p>Sponsorship and partnership are proposed as resource-mobilisation mechanisms and are subject to competent institutional approval and applicable Government/departmental procedures.</p></div>
+  <div class="section-head"><div class="eyebrow">Partner With Us</div><h2>🌱 Support the Bamboo Future</h2><p>Sponsorship is a supplementary resource-mobilisation mechanism. It shall not alter the approved institutional character of World Bamboo Week. Sponsor acceptance, branding, financial/in-kind support and commitments will follow the competent institutional mechanism and applicable Government rules.</p></div>
   <div class="funding-strip">
     <div class="fund"><strong>₹10L</strong><span>BRTC / Departmental Provision</span></div><div class="fund"><strong>₹5L</strong><span>CSR Sponsorship</span></div><div class="fund"><strong>₹3L</strong><span>Industry / Knowledge Partners</span></div><div class="fund"><strong>₹2L</strong><span>In-kind Sponsorship</span></div><div class="fund"><strong>₹2L</strong><span>Institutional / Partner Contribution</span></div>
   </div>
   <div class="sponsor-grid">
-    <div class="sponsor-card featured"><h3>Presenting / Title Partner</h3><div class="sponsor-price">₹5,00,000+</div><ul><li>Highest approved visibility</li><li>Flagship acknowledgement</li><li>Website recognition</li><li>Approved exhibition/knowledge partnership</li></ul></div>
-    <div class="sponsor-card"><h3>Platinum Partner</h3><div class="sponsor-price">₹3,00,000</div><ul><li>Prominent approved branding</li><li>Website recognition</li><li>Selected stage acknowledgement</li><li>Exhibition opportunity</li></ul></div>
-    <div class="sponsor-card"><h3>Gold Partner</h3><div class="sponsor-price">₹2,00,000</div><ul><li>Website recognition</li><li>Selected signage</li><li>Social-media acknowledgement</li><li>Approved partner listing</li></ul></div>
-    <div class="sponsor-card"><h3>Silver Partner</h3><div class="sponsor-price">₹1,00,000</div><ul><li>Website recognition</li><li>Selected event acknowledgement</li><li>Digital recognition</li></ul></div>
-    <div class="sponsor-card"><h3>Bronze Partner</h3><div class="sponsor-price">₹50,000</div><ul><li>Website/supporter listing</li><li>Selected acknowledgement</li></ul></div>
-    <div class="sponsor-card"><h3>Activity Partner</h3><div class="sponsor-price">₹25K–₹50K</div><ul><li>Competition support</li><li>Workshop support</li><li>Activity-linked acknowledgement</li></ul></div>
-    <div class="sponsor-card"><h3>Knowledge Partner</h3><div class="sponsor-price">IN-KIND</div><ul><li>Expertise</li><li>Technology</li><li>Training</li><li>Knowledge support</li></ul></div>
-    <div class="sponsor-card"><h3>Media Partner</h3><div class="sponsor-price">IN-KIND</div><ul><li>Media coverage</li><li>Digital promotion</li><li>Event visibility</li></ul></div>
-    <div class="sponsor-card"><h3>Product Partner</h3><div class="sponsor-price">IN-KIND</div><ul><li>Bamboo products</li><li>Participant kits</li><li>Materials</li><li>Approved support</li></ul></div>
+    <div class="sponsor-card featured"><h3>Title / Presenting Sponsor</h3><div class="sponsor-price">₹2,00,000+</div><ul><li>Prominent approved acknowledgement</li><li>Flagship acknowledgement</li><li>Website recognition</li><li>Sponsor profile</li></ul></div>
+    <div class="sponsor-card"><h3>Platinum Sponsor</h3><div class="sponsor-price">₹1,50,000</div><ul><li>Prominent website/event acknowledgement</li><li>Approved branding</li><li>Exhibition / knowledge interaction where appropriate</li></ul></div>
+    <div class="sponsor-card"><h3>Gold Sponsor</h3><div class="sponsor-price">₹1,00,000</div><ul><li>Website acknowledgement</li><li>Selected signage</li><li>Social-media recognition</li></ul></div>
+    <div class="sponsor-card"><h3>Silver Sponsor</h3><div class="sponsor-price">₹50,000</div><ul><li>Website acknowledgement</li><li>Selected signage</li></ul></div>
+    <div class="sponsor-card"><h3>Bronze / Supporter</h3><div class="sponsor-price">₹25,000</div><ul><li>Website acknowledgement</li><li>Supporter listing</li></ul></div>
+    <div class="sponsor-card"><h3>Activity Partner</h3><div class="sponsor-price">₹25K–₹75K</div><ul><li>Recognition linked to approved activity</li><li>Competition / workshop / adoption / digital support</li></ul></div>
+    <div class="sponsor-card"><h3>Knowledge Partner</h3><div class="sponsor-price">IN-KIND</div><ul><li>Expert / technical / knowledge recognition</li><li>Webinar, Global Showcase or training support</li></ul></div>
+    <div class="sponsor-card"><h3>Media Partner</h3><div class="sponsor-price">IN-KIND</div><ul><li>Approved media acknowledgement</li><li>Coverage and promotional support</li></ul></div>
+    <div class="sponsor-card"><h3>Product / Material Partner</h3><div class="sponsor-price">IN-KIND</div><ul><li>Approved product/material acknowledgement</li><li>Bamboo products, kits, workshop materials or plant-batch support</li></ul></div>
   </div>
   <div class="partner-note"><strong>Governance:</strong> Sponsor names/logos and promised benefits should be published only after written confirmation and competent approval. Sponsorship must not compromise scientific independence, competition judging or Government procedures.</div>
   <div style="text-align:center;margin-top:24px"><a class="btn btn-green" href="mailto:brtcchichpalli@gmail.com?subject=World%20Bamboo%20Week%202026%20Partnership">BECOME A PARTNER →</a>
@@ -487,11 +595,20 @@ footer li{margin:7px 0}
 </div></section>
 
 <section class="reach"><div class="container">
-  <div class="section-head"><div class="eyebrow">Proposed Reach Targets</div><h2>Measure. Document. Build Legacy.</h2><p>Planning targets to be finalised by the Core Organising Committee after registration capacity and communication resources are confirmed.</p></div>
+  <div class="section-head"><div class="eyebrow">Monitoring & Impact</div><h2>Documenting Participation and Legacy</h2><p>Planning targets and evidence framework from the final implementation plan.</p></div>
   <div class="reach-grid">
-    <div class="reach-box"><strong>2,500+</strong><span>Physical participants/visitors</span></div><div class="reach-box"><strong>15,000+</strong><span>Online reach / participants / views</span></div><div class="reach-box"><strong>1,000+</strong><span>Students reached</span></div><div class="reach-box"><strong>500+</strong><span>Farmers reached</span></div>
-    <div class="reach-box"><strong>300+</strong><span>Women SHG reach</span></div><div class="reach-box"><strong>250+</strong><span>Research/technical participants</span></div><div class="reach-box"><strong>150+</strong><span>Entrepreneurs/startups</span></div><div class="reach-box"><strong>200+</strong><span>Artisans</span></div>
-    <div class="reach-box"><strong>100+</strong><span>Institutions</span></div><div class="reach-box"><strong>10+</strong><span>Countries represented target</span></div><div class="reach-box"><strong>30+</strong><span>Media mentions target</span></div><div class="reach-box"><strong>50+</strong><span>Sponsor/partner prospects</span></div>
+    <div class="reach-box"><strong>250+</strong><span>Physical participation target</span></div>
+    <div class="reach-box"><strong>1,000+</strong><span>Online reach target</span></div>
+    <div class="reach-box"><strong>100+</strong><span>Students</span></div>
+    <div class="reach-box"><strong>100+</strong><span>Farmers</span></div>
+    <div class="reach-box"><strong>100+</strong><span>Women SHGs</span></div>
+    <div class="reach-box"><strong>100+</strong><span>Researchers / technical participants</span></div>
+    <div class="reach-box"><strong>10+</strong><span>Entrepreneurs / startups</span></div>
+    <div class="reach-box"><strong>100+</strong><span>Artisans</span></div>
+    <div class="reach-box"><strong>10+</strong><span>Institutions</span></div>
+    <div class="reach-box"><strong>States + International</strong><span>Representation target</span></div>
+    <div class="reach-box"><strong>Digital Pledges</strong><span>Total registrations/actions tracked</span></div>
+    <div class="reach-box"><strong>Adoption</strong><span>Plants/batches, adopters and evidence tracked</span></div>
   </div>
 </div></section>
 
@@ -499,6 +616,7 @@ footer li{margin:7px 0}
   <div class="eyebrow">Participate</div><h2>Be Part of World Bamboo Week 2026</h2>
   <p>Join the programme online, participate in an eligible competition, attend on-site activities at BRTC Chichpalli, connect with bamboo knowledge and support the movement for a sustainable bamboo future.</p>
   <a class="btn btn-green" href="https://docs.google.com/forms/d/e/1FAIpQLSe5ZvddrXdSgBCa4qywcTg5I2g9nv15AUtVllk9m-9J4IBU2w/viewform" target="_blank" rel="noopener">REGISTER NOW →</a>
+  <a class="btn btn-green" href="mailto:info@worldbambooweek.in">✉ info@worldbambooweek.in</a>
 </div></div></section>
 
 <section id="contact"><div class="container">
@@ -509,8 +627,8 @@ footer li{margin:7px 0}
     <p><strong>Government of Maharashtra – Forest Department</strong><br>
     Chichpalli, Chandrapur, Maharashtra, India</p>
     <p style="margin-top:12px;">
-      <strong>Email:</strong>
-      <a href="mailto:brtcchichpalli@gmail.com">brtcchichpalli@gmail.com</a><br>
+      <strong>Programme Email:</strong>
+      <a href="mailto:info@worldbambooweek.in">info@worldbambooweek.in</a><br><strong>BRTC Email:</strong> <a href="mailto:brtcchichpalli@gmail.com">brtcchichpalli@gmail.com</a><br>
       <strong>BRTC Telephone:</strong>
       <a href="tel:+917172272999">07172-272999</a>
     </p>
@@ -539,7 +657,7 @@ footer li{margin:7px 0}
 </section>
 
 <footer><div class="container"><div class="footer-grid">
-  <div><h3>World Bamboo Week 2026</h3><p>National & International Hybrid Bamboo Knowledge, Innovation & Livelihood Platform.</p><p style="margin-top:10px">12–18 September 2026<br>BRTC, Chichpalli, Maharashtra, India</p></div>
+  <div><h3>World Bamboo Week 2026</h3><p>National & International Hybrid Bamboo Knowledge, Innovation & Livelihood Platform.</p><p style="margin-top:10px">14–18 September 2026<br>BRTC, Chichpalli, Maharashtra, India</p></div>
   <div><h3>Event</h3><ul><li><a href="#programme">Programme</a></li><li><a href="#competitions">Competitions</a></li><li><a href="#global">Global Bamboo Connect</a></li><li><a href="#brtc">BRTC</a></li></ul></div>
   <div><h3>Partners</h3><ul><li><a href="#sponsorship">Sponsorship</a></li><li><a href="#sponsorship">CSR Partnership</a></li><li><a href="#sponsorship">Knowledge Partner</a></li><li><a href="#sponsorship">Media / Product Partner</a></li></ul></div>
   <div><h3>Contact Us</h3><ul>
@@ -547,7 +665,7 @@ footer li{margin:7px 0}
     <li><a href="tel:+917828153660">📞 7828153660</a></li>
     <li><a href="tel:+917743850706">📞 7743850706</a></li>
     <li><a href="tel:+918669867178">📞 8669867178</a></li>
-    <li><a href="mailto:brtcchichpalli@gmail.com">✉ brtcchichpalli@gmail.com</a></li>
+    <li><a href="mailto:info@worldbambooweek.in">✉ info@worldbambooweek.in</a></li><li><a href="mailto:brtcchichpalli@gmail.com">✉ brtcchichpalli@gmail.com</a></li>
     <li>📍 BRTC, Chichpalli, Chandrapur, Maharashtra</li>
   </ul></div>
 </div><div class="footer-bottom">© 2026 Bamboo Research & Training Centre (BRTC), Chichpalli. Government of Maharashtra – Forest Department. | World Bamboo Week 2026</div></div></footer>
